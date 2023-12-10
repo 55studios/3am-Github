@@ -1,0 +1,294 @@
+fileFormatVersion: 2
+guid: cbc598f8ec2670f439bd9bfdcc87f95a
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Concrete Pavement
+    second: {fileID: 2100000, guid: d9f3a9b13c18190418be74d9e9fa3acd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dice_White
+    second: {fileID: 2100000, guid: 9bd6765adb62c664d8d68635a59e4780, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Fabric01 PBR.001
+    second: {fileID: 2100000, guid: 3930f323aa9eab24c82506e4ee15860a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_COLOR_MADERA
+    second: {fileID: 2100000, guid: 8a33929bee6bdd34aa3abe9ae1eed2ef, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Color_negro
+    second: {fileID: 2100000, guid: 0f4af036279af3e4e9d2cc0784aa9c62, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Color_rojo_01
+    second: {fileID: 2100000, guid: 3d25602c59362d94f806f2acc7e5a5d4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Color_verde_01
+    second: {fileID: 2100000, guid: 23ab85c8d8bc36141b7ab90ce4922dfc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Naranja_02
+    second: {fileID: 2100000, guid: 0f84c99f85c53d24498c299338631920, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_ROJO_02
+    second: {fileID: 2100000, guid: d4413493676bcf645af8fa6e33aa3693, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_ROJO_03
+    second: {fileID: 2100000, guid: fe91e3c140db7e345af11dc45b598ab7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_amarillo_02
+    second: {fileID: 2100000, guid: fc67f3f766eae1f4ba4f2adfc7b8679b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_amarillo_verdoso
+    second: {fileID: 2100000, guid: 23a43a670fb243a4cb81d9a2f98d60e5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_azul_01
+    second: {fileID: 2100000, guid: 20b8c56dcdee93842bd80c5829316c30, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_azul_04
+    second: {fileID: 2100000, guid: e731c4e7a57d7254ba1947c69548ce48, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_azul_3
+    second: {fileID: 2100000, guid: 32fe68fed1d57414bbd78c10ca5605f6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_azultecho_escenario
+    second: {fileID: 2100000, guid: 866f361a4adf75c44b6f93e168c82e71, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_cafe_01
+    second: {fileID: 2100000, guid: 13a43967717f09e4abec19f224aa8b56, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_cafe_metalico
+    second: {fileID: 2100000, guid: adeea5be74e27b0469e3090cda586224, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_color_Amarillo_01
+    second: {fileID: 2100000, guid: 754834b72ac8e174b98bd8240ab16392, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_color_Azul_01
+    second: {fileID: 2100000, guid: 959496f54d6d7f24098143a4214978b9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_color_Naranja_01
+    second: {fileID: 2100000, guid: 3b495a4ed8dcee344996e6acc01cbf23, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_color_rojo_cortinas
+    second: {fileID: 2100000, guid: 20c8f0e07219cd844a5e351ac867bb2e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_hojas_verdes
+    second: {fileID: 2100000, guid: c0d9e265ce753b846991d917894b71e5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_material_cafe_01
+    second: {fileID: 2100000, guid: 8f601732838b59c48a62492491f68d4c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_material_concreto_01
+    second: {fileID: 2100000, guid: 090b6a83a1e58bb45bdcb996c74df069, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_morado_01
+    second: {fileID: 2100000, guid: f0de429296764664a954608ca8f49bc0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_naranja_02
+    second: {fileID: 2100000, guid: 2d7fce4dc2b26304aadabc560b4e38cd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_rosado_01
+    second: {fileID: 2100000, guid: afcd3f5ea3af13345b4ab9d7fbbddc22, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_verde_limon
+    second: {fileID: 2100000, guid: 776d3bb2db9d121489d387fdfbf814f1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: 85d8b91a09ae6134b865a74a84ba077d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.002
+    second: {fileID: 2100000, guid: c024fba7d7163f540aeb525de8095b89, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.003
+    second: {fileID: 2100000, guid: d01247356fc8c4946aab57ddbe9c9d75, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.004
+    second: {fileID: 2100000, guid: de400cdbcd1248043a70e50a2641658c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plush Carpet
+    second: {fileID: 2100000, guid: c87540c9acc00dd47bb13ec48215b888, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rugged concrete
+    second: {fileID: 2100000, guid: 957ba55097b7fbe45ae350a84826b11f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SUELO AJEDREZADO
+    second: {fileID: 2100000, guid: 432dd803fe39a3144831a515e2f2b67e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: White Powder Coating Texture
+    second: {fileID: 2100000, guid: 3efcf10cf2fd67c469970c9c9e6778e4, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 0
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 0
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

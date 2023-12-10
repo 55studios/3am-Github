@@ -1,0 +1,219 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12d2270d181df7f4a84947f323437aab, type: 3}
+  m_Name: Data
+  m_EditorClassIdentifier: 
+  listContact:
+  - idContact: CodID1
+    nameContact: Personaje 1
+    spriteContact: {fileID: -1181259174, guid: 6d3a029c41065074bb5c0507778dbbca, type: 3}
+    nameScene: scareScene
+    purchasedContact: 0
+    longAnswers:
+    - sdafasfasdf
+    - asdasdsad
+    - asdasdasd
+    - asdasd
+    - asdasdasd
+    shortAnswers:
+    - 321321321
+    - 54645645
+    - 4564564
+    - 45645645
+    - 546546456
+  - idContact: CodID2
+    nameContact: Personaje 2
+    spriteContact: {fileID: 1910548728, guid: 6d3a029c41065074bb5c0507778dbbca, type: 3}
+    nameScene: scareScene
+    purchasedContact: 1
+    longAnswers:
+    - sdafasfasdf
+    - asdasdsad
+    - asdasdasd
+    - asdasd
+    - asdasdasd
+    shortAnswers:
+    - 321321321
+    - 54645645
+    - 4564564
+    - 45645645
+    - 546546456
+  - idContact: CodID3
+    nameContact: Personaje 3
+    spriteContact: {fileID: 1356118274, guid: 6d3a029c41065074bb5c0507778dbbca, type: 3}
+    nameScene: scareScene
+    purchasedContact: 1
+    longAnswers:
+    - sdafasfasdf
+    - asdasdsad
+    - asdasdasd
+    - asdasd
+    - asdasdasd
+    shortAnswers:
+    - 321321321
+    - 54645645
+    - 4564564
+    - 45645645
+    - 546546456
+  - idContact: CodID4
+    nameContact: Personaje 4
+    spriteContact: {fileID: -1805251894, guid: 6d3a029c41065074bb5c0507778dbbca, type: 3}
+    nameScene: scareScene
+    purchasedContact: 1
+    longAnswers:
+    - sdafasfasdf
+    - asdasdsad
+    - asdasdasd
+    - asdasd
+    - asdasdasd
+    shortAnswers:
+    - 321321321
+    - 54645645
+    - 4564564
+    - 45645645
+    - 546546456
+  - idContact: CodID5
+    nameContact: Personaje 5
+    spriteContact: {fileID: 1560617897, guid: 6d3a029c41065074bb5c0507778dbbca, type: 3}
+    nameScene: scareScene
+    purchasedContact: 1
+    longAnswers:
+    - sdafasfasdf
+    - asdasdsad
+    - asdasdasd
+    - asdasd
+    - asdasdasd
+    shortAnswers:
+    - 321321321
+    - 54645645
+    - 4564564
+    - 45645645
+    - 546546456
+  - idContact: CodID6
+    nameContact: Personaje 6
+    spriteContact: {fileID: -395363331, guid: 6d3a029c41065074bb5c0507778dbbca, type: 3}
+    nameScene: scareScene
+    purchasedContact: 0
+    longAnswers:
+    - sdafasfasdf
+    - asdasdsad
+    - asdasdasd
+    - asdasd
+    - asdasdasd
+    shortAnswers:
+    - 321321321
+    - 54645645
+    - 4564564
+    - 45645645
+    - 546546456
+  - idContact: CodID7
+    nameContact: Personaje 7
+    spriteContact: {fileID: 1266473089, guid: 6d3a029c41065074bb5c0507778dbbca, type: 3}
+    nameScene: scareScene
+    purchasedContact: 1
+    longAnswers:
+    - sdafasfasdf
+    - asdasdsad
+    - asdasdasd
+    - asdasd
+    - asdasdasd
+    shortAnswers:
+    - 321321321
+    - 54645645
+    - 4564564
+    - 45645645
+    - 546546456
+  - idContact: CodID8
+    nameContact: Personaje 8
+    spriteContact: {fileID: -889073228, guid: 6d3a029c41065074bb5c0507778dbbca, type: 3}
+    nameScene: scareScene
+    purchasedContact: 1
+    longAnswers:
+    - sdafasfasdf
+    - asdasdsad
+    - asdasdasd
+    - asdasd
+    - asdasdasd
+    shortAnswers:
+    - 321321321
+    - 54645645
+    - 4564564
+    - 45645645
+    - 546546456
+  - idContact: CodID9
+    nameContact: Personaje 9
+    spriteContact: {fileID: 903205174, guid: 6d3a029c41065074bb5c0507778dbbca, type: 3}
+    nameScene: scareScene
+    purchasedContact: 1
+    longAnswers:
+    - sdafasfasdf
+    - asdasdsad
+    - asdasdasd
+    - asdasd
+    - asdasdasd
+    shortAnswers:
+    - 321321321
+    - 54645645
+    - 4564564
+    - 45645645
+    - 546546456
+  - idContact: CodID10
+    nameContact: Personaje 10
+    spriteContact: {fileID: -891576513, guid: 6d3a029c41065074bb5c0507778dbbca, type: 3}
+    nameScene: scareScene
+    purchasedContact: 0
+    longAnswers:
+    - sdafasfasdf
+    - asdasdsad
+    - asdasdasd
+    - asdasd
+    - asdasdasd
+    shortAnswers:
+    - 321321321
+    - 54645645
+    - 4564564
+    - 45645645
+    - 546546456
+  - idContact: CodID11
+    nameContact: Personaje 11
+    spriteContact: {fileID: 1511006120, guid: 6d3a029c41065074bb5c0507778dbbca, type: 3}
+    nameScene: scareScene
+    purchasedContact: 1
+    longAnswers:
+    - sdafasfasdf
+    - asdasdsad
+    - asdasdasd
+    - asdasd
+    - asdasdasd
+    shortAnswers:
+    - 321321321
+    - 54645645
+    - 4564564
+    - 45645645
+    - 546546456
+  - idContact: CodID12
+    nameContact: Personaje 12
+    spriteContact: {fileID: 759642823, guid: 6d3a029c41065074bb5c0507778dbbca, type: 3}
+    nameScene: scareScene
+    purchasedContact: 1
+    longAnswers:
+    - sdafasfasdf
+    - asdasdsad
+    - asdasdasd
+    - asdasd
+    - asdasdasd
+    shortAnswers:
+    - 321321321
+    - 54645645
+    - 4564564
+    - 45645645
+    - 546546456
