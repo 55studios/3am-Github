@@ -1,0 +1,1020 @@
+fileFormatVersion: 2
+guid: 6d3a029c41065074bb5c0507778dbbca
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Hand-Drawn-Avatar-Icons_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 745.6
+        width: 186.75
+        height: 186.4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 10, y: 10, z: 10, w: 10}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6782f7d9e50a6e94ba7461325d652e1a
+      internalID: -1181259174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand-Drawn-Avatar-Icons_1
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 745.6
+        width: 186.75
+        height: 186.4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 10, y: 10, z: 10, w: 10}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19b0ab203f49d324da3dbc7f37ab7ac3
+      internalID: 1910548728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand-Drawn-Avatar-Icons_2
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 745.6
+        width: 186.75
+        height: 186.4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 10, y: 10, z: 10, w: 10}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23af248dbfa230641b9d9cf2ea7cad1a
+      internalID: 1356118274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand-Drawn-Avatar-Icons_3
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 745.6
+        width: 186.75
+        height: 186.4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 10, y: 10, z: 10, w: 10}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b23c0237d409484d9eb8e965d5eb95f
+      internalID: -1805251894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand-Drawn-Avatar-Icons_4
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 745.6
+        width: 186.75
+        height: 186.4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 10, y: 10, z: 10, w: 10}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3acf3d510e4a1f40b70906130445288
+      internalID: 1560617897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand-Drawn-Avatar-Icons_5
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 745.6
+        width: 186.75
+        height: 186.4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 10, y: 10, z: 10, w: 10}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01e7dc6c4f6d87d41a31266c87aa1a0e
+      internalID: -395363331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand-Drawn-Avatar-Icons_6
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 745.6
+        width: 186.75
+        height: 186.4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 10, y: 10, z: 10, w: 10}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60d847f557ef84c4ca21d7f495835df7
+      internalID: 1266473089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand-Drawn-Avatar-Icons_7
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 745.6
+        width: 186.75
+        height: 186.4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 10, y: 10, z: 10, w: 10}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92dafafd32072ed43b4b5f7a82c36be8
+      internalID: -889073228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand-Drawn-Avatar-Icons_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 559.6
+        width: 186.75
+        height: 186.4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 10, y: 10, z: 10, w: 10}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be7fbd9b9ba1cf9419963db3235608bb
+      internalID: 903205174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand-Drawn-Avatar-Icons_9
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 559.6
+        width: 186.75
+        height: 186.4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 10, y: 10, z: 10, w: 10}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7546d2d25de3d2a47ba6e2deb56197e9
+      internalID: -891576513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand-Drawn-Avatar-Icons_10
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 559.6
+        width: 186.75
+        height: 186.4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 10, y: 10, z: 10, w: 10}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99a4da4936cc72f4d8b33d80284cfc1f
+      internalID: 1511006120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand-Drawn-Avatar-Icons_11
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 559.6
+        width: 186.75
+        height: 186.4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 10, y: 10, z: 10, w: 10}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42a385bc99616e84e8294a15d18f8f9c
+      internalID: 759642823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand-Drawn-Avatar-Icons_12
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 559.6
+        width: 186.75
+        height: 186.4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 10, y: 10, z: 10, w: 10}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e33a2503c04a4846adc25dfd4e6a44d
+      internalID: -1326108482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand-Drawn-Avatar-Icons_13
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 559.6
+        width: 186.75
+        height: 186.4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05e942ccdb8f06346be0db209eeb7ed0
+      internalID: -1150928469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand-Drawn-Avatar-Icons_14
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 559.6
+        width: 186.75
+        height: 186.4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5532c26901c75e446810e7dfefb37b10
+      internalID: -2009468627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand-Drawn-Avatar-Icons_15
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 559.6
+        width: 186.75
+        height: 186.4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef9fcb86311e51040bd37f3253f84793
+      internalID: -611200066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand-Drawn-Avatar-Icons_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 373.6
+        width: 186.75
+        height: 186.4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a67df03eb5c97544a66a47399ebbee7
+      internalID: 23652359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand-Drawn-Avatar-Icons_17
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 373.6
+        width: 186.75
+        height: 186.4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66151274cc7dd424da5efd61a72cb153
+      internalID: -1616530589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand-Drawn-Avatar-Icons_18
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 373.6
+        width: 186.75
+        height: 186.4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddaca8ee6f42852478d35b1fdfaaf5d1
+      internalID: -209841809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand-Drawn-Avatar-Icons_19
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 373.6
+        width: 186.75
+        height: 186.4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13f02b505fcbd2d4286575001d8293d0
+      internalID: 18696502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand-Drawn-Avatar-Icons_20
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 373.6
+        width: 186.75
+        height: 186.4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c774859b0fcb90448a564c5d5c7182a7
+      internalID: -1429532310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand-Drawn-Avatar-Icons_21
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 373.6
+        width: 186.75
+        height: 186.4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78c563b49e64a464b86700b645cc1901
+      internalID: -241584153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand-Drawn-Avatar-Icons_22
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 373.6
+        width: 186.75
+        height: 186.4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54bc0f1aecf1f3543a9154f4f30bacf4
+      internalID: -707903224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand-Drawn-Avatar-Icons_23
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 373.6
+        width: 186.75
+        height: 186.4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bef397c8285db0b47b1513217c505683
+      internalID: -100886533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand-Drawn-Avatar-Icons_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 187.6
+        width: 186.75
+        height: 186.4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9898f7e0c2f8a741bb52a556273a810
+      internalID: -2050194033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand-Drawn-Avatar-Icons_25
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 187.6
+        width: 186.75
+        height: 186.4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 263daafd39a3d2746ad3d2af2f4e3fae
+      internalID: 1262867877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand-Drawn-Avatar-Icons_26
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 187.6
+        width: 186.75
+        height: 186.4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77a7c60a986c4ec4993f2b8b77215499
+      internalID: 478491984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand-Drawn-Avatar-Icons_27
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 187.6
+        width: 186.75
+        height: 186.4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f884a6432e59834484ff4c2a41b6596
+      internalID: 2013670954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand-Drawn-Avatar-Icons_28
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 187.6
+        width: 186.75
+        height: 186.4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5c02f4d8d361804ea526a0c0a963cf1
+      internalID: 1065235042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand-Drawn-Avatar-Icons_29
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 187.6
+        width: 186.75
+        height: 186.4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6c8e5ecce989cc4f9871348b6835572
+      internalID: 298181502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand-Drawn-Avatar-Icons_30
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 187.6
+        width: 186.75
+        height: 186.4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3804f2df887b03b4a8b135769cd2d699
+      internalID: -973159268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand-Drawn-Avatar-Icons_31
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 187.6
+        width: 186.75
+        height: 186.4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40d1b727c31c4bf4f8f900180ecac10e
+      internalID: -1715993637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand-Drawn-Avatar-Icons_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1.6000061
+        width: 186.75
+        height: 186.4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a956a8442b2dd984f861bffa875e99e9
+      internalID: 375959131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand-Drawn-Avatar-Icons_33
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 1.6000061
+        width: 186.75
+        height: 186.4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 817f8e2f3097f3c46b8748638a7d83e1
+      internalID: -358012899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand-Drawn-Avatar-Icons_34
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 1.6000061
+        width: 186.75
+        height: 186.4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4aa65b1b7624f7458ff418f51315419
+      internalID: -1912181515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand-Drawn-Avatar-Icons_35
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 1.6000061
+        width: 186.75
+        height: 186.4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aef4512ea54d5948938e8769d4bdafc
+      internalID: -1634391627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand-Drawn-Avatar-Icons_36
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 1.6000061
+        width: 186.75
+        height: 186.4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cc4fd5085bf01c49ba981b29c98da12
+      internalID: 802311228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand-Drawn-Avatar-Icons_37
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 1.6000061
+        width: 186.75
+        height: 186.4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c56ae927d4e6524c988f86b9085a0a7
+      internalID: -552200921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand-Drawn-Avatar-Icons_38
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 1.6000061
+        width: 186.75
+        height: 186.4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7340df1e69d6628499fdb9c3c3624b66
+      internalID: 847922332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand-Drawn-Avatar-Icons_39
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 1.6000061
+        width: 186.75
+        height: 186.4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24425aabe7ee99a41b39e59d48868bc3
+      internalID: 1267174437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Hand-Drawn-Avatar-Icons_0: -1181259174
+      Hand-Drawn-Avatar-Icons_1: 1910548728
+      Hand-Drawn-Avatar-Icons_10: 1511006120
+      Hand-Drawn-Avatar-Icons_11: 759642823
+      Hand-Drawn-Avatar-Icons_12: -1326108482
+      Hand-Drawn-Avatar-Icons_13: -1150928469
+      Hand-Drawn-Avatar-Icons_14: -2009468627
+      Hand-Drawn-Avatar-Icons_15: -611200066
+      Hand-Drawn-Avatar-Icons_16: 23652359
+      Hand-Drawn-Avatar-Icons_17: -1616530589
+      Hand-Drawn-Avatar-Icons_18: -209841809
+      Hand-Drawn-Avatar-Icons_19: 18696502
+      Hand-Drawn-Avatar-Icons_2: 1356118274
+      Hand-Drawn-Avatar-Icons_20: -1429532310
+      Hand-Drawn-Avatar-Icons_21: -241584153
+      Hand-Drawn-Avatar-Icons_22: -707903224
+      Hand-Drawn-Avatar-Icons_23: -100886533
+      Hand-Drawn-Avatar-Icons_24: -2050194033
+      Hand-Drawn-Avatar-Icons_25: 1262867877
+      Hand-Drawn-Avatar-Icons_26: 478491984
+      Hand-Drawn-Avatar-Icons_27: 2013670954
+      Hand-Drawn-Avatar-Icons_28: 1065235042
+      Hand-Drawn-Avatar-Icons_29: 298181502
+      Hand-Drawn-Avatar-Icons_3: -1805251894
+      Hand-Drawn-Avatar-Icons_30: -973159268
+      Hand-Drawn-Avatar-Icons_31: -1715993637
+      Hand-Drawn-Avatar-Icons_32: 375959131
+      Hand-Drawn-Avatar-Icons_33: -358012899
+      Hand-Drawn-Avatar-Icons_34: -1912181515
+      Hand-Drawn-Avatar-Icons_35: -1634391627
+      Hand-Drawn-Avatar-Icons_36: 802311228
+      Hand-Drawn-Avatar-Icons_37: -552200921
+      Hand-Drawn-Avatar-Icons_38: 847922332
+      Hand-Drawn-Avatar-Icons_39: 1267174437
+      Hand-Drawn-Avatar-Icons_4: 1560617897
+      Hand-Drawn-Avatar-Icons_5: -395363331
+      Hand-Drawn-Avatar-Icons_6: 1266473089
+      Hand-Drawn-Avatar-Icons_7: -889073228
+      Hand-Drawn-Avatar-Icons_8: 903205174
+      Hand-Drawn-Avatar-Icons_9: -891576513
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
