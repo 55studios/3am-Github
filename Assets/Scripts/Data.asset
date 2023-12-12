@@ -14,8 +14,80 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   listContact:
   - idContact: CodID1
-    nameContact: Personaje 1
+    nameContact: Raggatta
     spriteContact: {fileID: -1181259174, guid: 6d3a029c41065074bb5c0507778dbbca, type: 3}
+    nameScene: none
+    purchasedContact: 0
+    longAnswers:
+    - ans001
+    shortAnswers:
+    - 321321321
+  - idContact: CodID2
+    nameContact: Ponmi
+    spriteContact: {fileID: 1910548728, guid: 6d3a029c41065074bb5c0507778dbbca, type: 3}
+    nameScene: scareScene
+    purchasedContact: 1
+    longAnswers:
+    - Yes, it's pretty... good... you know
+    - I learned that stuff... It blew my mind.
+    - 'I''m more of a night owl. '
+    - 'Not at the moment. '
+    - It's been pretty... meh!, thanks!
+    - Nothing fascinating lately
+    - I'd choose the other, but...
+    - I really want to leave
+    - Don't read me, help me out!!!
+    - GET ME OUT OF HERE NOW!!!
+    shortAnswers:
+    - Not much
+    - Yes, it's... wrong
+    - I started crying recently...
+    - Coffe... A lot...
+    - Love... getting out here
+    - I'm not entirely sure
+    - I don't want
+    - I'd like to...
+    - Love yo could...
+    - Help... me...
+  - idContact: CodID3
+    nameContact: KinGr
+    spriteContact: {fileID: 1356118274, guid: 6d3a029c41065074bb5c0507778dbbca, type: 3}
+    nameScene: None2
+    purchasedContact: 0
+    longAnswers:
+    - sdafasfasdf
+    shortAnswers:
+    - 321321321
+  - idContact: CodID4
+    nameContact: J'axe
+    spriteContact: {fileID: -1805251894, guid: 6d3a029c41065074bb5c0507778dbbca, type: 3}
+    nameScene: scareScene
+    purchasedContact: 1
+    longAnswers:
+    - I'm not entirely convinced, however... you...
+    - I'm not sure, but it seems like... KingR...
+    - I'm not entirely clear on that, but... if you... you...
+    - I'm not completely confident... at all
+    - One of my favorites is sweet avocado
+    - I've started yelling...  it's been a lot of... fun :D
+    - Yeah, I saw her crying
+    - I don't trust them... none
+    - It's been pretty good here
+    - Definitely want to get... you... in here...
+    shortAnswers:
+    - I could b wrong
+    - It's a bit unclear
+    - I'd choose him
+    - I have some doubts
+    - 'But I think... '
+    - No
+    - You can't
+    - Come... here
+    - Not to b honest
+    - ':D '
+  - idContact: CodID5
+    nameContact: D-Dmon
+    spriteContact: {fileID: 1560617897, guid: 6d3a029c41065074bb5c0507778dbbca, type: 3}
     nameScene: scareScene
     purchasedContact: 0
     longAnswers:
@@ -30,76 +102,8 @@ MonoBehaviour:
     - 4564564
     - 45645645
     - 546546456
-  - idContact: CodID2
-    nameContact: Personaje 2
-    spriteContact: {fileID: 1910548728, guid: 6d3a029c41065074bb5c0507778dbbca, type: 3}
-    nameScene: scareScene
-    purchasedContact: 1
-    longAnswers:
-    - sdafasfasdf
-    - asdasdsad
-    - asdasdasd
-    - asdasd
-    - asdasdasd
-    shortAnswers:
-    - 321321321
-    - 54645645
-    - 4564564
-    - 45645645
-    - 546546456
-  - idContact: CodID3
-    nameContact: Personaje 3
-    spriteContact: {fileID: 1356118274, guid: 6d3a029c41065074bb5c0507778dbbca, type: 3}
-    nameScene: scareScene
-    purchasedContact: 1
-    longAnswers:
-    - sdafasfasdf
-    - asdasdsad
-    - asdasdasd
-    - asdasd
-    - asdasdasd
-    shortAnswers:
-    - 321321321
-    - 54645645
-    - 4564564
-    - 45645645
-    - 546546456
-  - idContact: CodID4
-    nameContact: Personaje 4
-    spriteContact: {fileID: -1805251894, guid: 6d3a029c41065074bb5c0507778dbbca, type: 3}
-    nameScene: scareScene
-    purchasedContact: 1
-    longAnswers:
-    - sdafasfasdf
-    - asdasdsad
-    - asdasdasd
-    - asdasd
-    - asdasdasd
-    shortAnswers:
-    - 321321321
-    - 54645645
-    - 4564564
-    - 45645645
-    - 546546456
-  - idContact: CodID5
-    nameContact: Personaje 5
-    spriteContact: {fileID: 1560617897, guid: 6d3a029c41065074bb5c0507778dbbca, type: 3}
-    nameScene: scareScene
-    purchasedContact: 1
-    longAnswers:
-    - sdafasfasdf
-    - asdasdsad
-    - asdasdasd
-    - asdasd
-    - asdasdasd
-    shortAnswers:
-    - 321321321
-    - 54645645
-    - 4564564
-    - 45645645
-    - 546546456
   - idContact: CodID6
-    nameContact: Personaje 6
+    nameContact: Gang Ale
     spriteContact: {fileID: -395363331, guid: 6d3a029c41065074bb5c0507778dbbca, type: 3}
     nameScene: scareScene
     purchasedContact: 0
@@ -116,10 +120,10 @@ MonoBehaviour:
     - 45645645
     - 546546456
   - idContact: CodID7
-    nameContact: Personaje 7
+    nameContact: V-Ice
     spriteContact: {fileID: 1266473089, guid: 6d3a029c41065074bb5c0507778dbbca, type: 3}
     nameScene: scareScene
-    purchasedContact: 1
+    purchasedContact: 0
     longAnswers:
     - sdafasfasdf
     - asdasdsad
@@ -133,10 +137,10 @@ MonoBehaviour:
     - 45645645
     - 546546456
   - idContact: CodID8
-    nameContact: Personaje 8
+    nameContact: Zoo BL
     spriteContact: {fileID: -889073228, guid: 6d3a029c41065074bb5c0507778dbbca, type: 3}
     nameScene: scareScene
-    purchasedContact: 1
+    purchasedContact: 0
     longAnswers:
     - sdafasfasdf
     - asdasdsad
@@ -150,10 +154,10 @@ MonoBehaviour:
     - 45645645
     - 546546456
   - idContact: CodID9
-    nameContact: Personaje 9
+    nameContact: K' off Moo
     spriteContact: {fileID: 903205174, guid: 6d3a029c41065074bb5c0507778dbbca, type: 3}
     nameScene: scareScene
-    purchasedContact: 1
+    purchasedContact: 0
     longAnswers:
     - sdafasfasdf
     - asdasdsad
@@ -167,7 +171,7 @@ MonoBehaviour:
     - 45645645
     - 546546456
   - idContact: CodID10
-    nameContact: Personaje 10
+    nameContact: K-inn
     spriteContact: {fileID: -891576513, guid: 6d3a029c41065074bb5c0507778dbbca, type: 3}
     nameScene: scareScene
     purchasedContact: 0
@@ -184,10 +188,10 @@ MonoBehaviour:
     - 45645645
     - 546546456
   - idContact: CodID11
-    nameContact: Personaje 11
+    nameContact: Bub-L
     spriteContact: {fileID: 1511006120, guid: 6d3a029c41065074bb5c0507778dbbca, type: 3}
     nameScene: scareScene
-    purchasedContact: 1
+    purchasedContact: 0
     longAnswers:
     - sdafasfasdf
     - asdasdsad
@@ -201,10 +205,10 @@ MonoBehaviour:
     - 45645645
     - 546546456
   - idContact: CodID12
-    nameContact: Personaje 12
+    nameContact: Cloink
     spriteContact: {fileID: 759642823, guid: 6d3a029c41065074bb5c0507778dbbca, type: 3}
     nameScene: scareScene
-    purchasedContact: 1
+    purchasedContact: 0
     longAnswers:
     - sdafasfasdf
     - asdasdsad
