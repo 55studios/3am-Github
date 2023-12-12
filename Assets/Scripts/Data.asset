@@ -68,7 +68,7 @@ MonoBehaviour:
   - idContact: CodID4
     nameContact: J'axe
     spriteContact: {fileID: -1805251894, guid: 6d3a029c41065074bb5c0507778dbbca, type: 3}
-    nameScene: scareScene
+    nameScene: scareScene 1
     purchasedContact: 1
     longAnswers:
     - I'm not entirely convinced, however... you...
