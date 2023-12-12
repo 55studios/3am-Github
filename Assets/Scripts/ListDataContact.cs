@@ -17,4 +17,5 @@ public class ContactData
     public bool purchasedContact;
     public List<string> longAnswers = new List<string>();
     public List<string> shortAnswers = new List<string>();
+    public List<Sprite> spriteScare = new List<Sprite>();
 }

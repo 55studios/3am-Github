@@ -59,7 +59,8 @@ public class CrontrollerChat : MonoBehaviour
                 }
                 else
                 {
-                    Instantiate(imagesForInstantiate, contentMessage, false);
+                   Image imagescare= Instantiate(imagesForInstantiate, contentMessage, false);
+                   imagescare.sprite = _contactData.spriteScare[Random.Range(0, _contactData.spriteScare.Count)];
                 }
             }
 
@@ -74,13 +75,15 @@ public class CrontrollerChat : MonoBehaviour
                 }
                 else
                 {
-                    Instantiate(imagesForInstantiate, contentMessage, false);
+                    Image imagescare= Instantiate(imagesForInstantiate, contentMessage, false);
+                    imagescare.sprite = _contactData.spriteScare[Random.Range(0, _contactData.spriteScare.Count)];
                 }
             }
         }
         else
         {
-            Instantiate(imagesForInstantiate, contentMessage, false);
+            Image imagescare= Instantiate(imagesForInstantiate, contentMessage, false);
+            imagescare.sprite = _contactData.spriteScare[Random.Range(0, _contactData.spriteScare.Count)];
         }
     }
 
