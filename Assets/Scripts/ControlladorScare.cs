@@ -1,39 +1,96 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
 public class ControlladorScare : MonoBehaviour
 {
-    [SerializeField] private List<Transform> pointMoveCamera = new List<Transform>();
-    [SerializeField] private GameObject mainCamera;
-    [SerializeField] private float speedMove;
-    [SerializeField] private int cameraActve;
+    [SerializeField] private List<GameObject> pointMoveCamera = new List<GameObject>();
+    [SerializeField] private GameObject camScare;
+    [SerializeField] private GameObject camActive;
+    [SerializeField] private Canvas panelTvStatic;
     [SerializeField] private int timeWait;
+    [SerializeField] private List<string> listMessageNoEndCall = new List<string>();
+    [SerializeField] private Animator _animator;
 
-    private void Start()
-    {
-        UpdateCam();
-    }
-
-    private void UpdateCam()
+    public void UpdateCam()
     {
         StartCoroutine(MoveCamWithTime());
     }
 
     IEnumerator MoveCamWithTime()
     {
-        while ( mainCamera.transform.position!=pointMoveCamera[cameraActve].position)
+        yield return new WaitForSeconds(0.5f);
+        if (!camScare.activeInHierarchy)
         {
-            MoveCamera();
+
+            if (pointMoveCamera.Count==0)
+            {
+                panelTvStatic.gameObject.SetActive(true);
+                int randomStatic = Random.Range(0, 3);
+                switch (randomStatic)
+                {
+                    case 0:
+                        _animator.SetBool("State1",true);
+                        break;
+                    case 1:
+                        _animator.SetBool("State2",true);
+                        break;
+                    case 3:
+                        _animator.SetBool("State3",true);
+                        break;
+                    default:
+                        _animator.SetBool("State1",true);
+                        break;
+                }
+                camActive.SetActive(false);
+                camActive = camScare;
+                panelTvStatic.worldCamera = camActive.GetComponent<Camera>();
+                camActive.SetActive(true);
+                pointMoveCamera.Remove(camActive);
+            }
+            else
+            {
+                panelTvStatic.gameObject.SetActive(true);
+                int randomStatic = Random.Range(0, 3);
+                switch (randomStatic)
+                {
+                    case 0:
+                        _animator.SetBool("State1",true);
+                        break;
+                    case 1:
+                        _animator.SetBool("State2",true);
+                        break;
+                    case 3:
+                        _animator.SetBool("State3",true);
+                        break;
+                    default:
+                        _animator.SetBool("State1",true);
+                        break;
+                }
+                camActive.SetActive(false);
+                camActive = pointMoveCamera[Random.Range(0, pointMoveCamera.Count)];
+                camActive.SetActive(true);
+                panelTvStatic.worldCamera = camActive.GetComponent<Camera>();
+                pointMoveCamera.Remove(camActive);
+            }
+
+            yield return new WaitForSeconds(1f);
+            panelTvStatic.gameObject.SetActive(false);
         }
-        yield return new WaitForSeconds(timeWait);
-        cameraActve = Random.Range(0, pointMoveCamera.Count);
-        UpdateCam();
     }
-    public void MoveCamera()
+    public string CanEndTheCall()
     {
-        mainCamera.transform.position = Vector3.MoveTowards(mainCamera.gameObject.transform.position, pointMoveCamera[cameraActve].position, speedMove);
+        if (camScare.activeInHierarchy)
+        {
+            return "true";
+        }
+        else
+        {
+            int message= Random.Range(0, listMessageNoEndCall.Count);
+            return listMessageNoEndCall[message];
+        }
     }
 }

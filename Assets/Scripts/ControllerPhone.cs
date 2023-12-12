@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -14,6 +15,8 @@ public class ControllerPhone : MonoBehaviour
     [SerializeField] private CrontrollerChat chat;
     [SerializeField] private ControllerCall call;
     [SerializeField] private ControllerPurchasing Purchasing;
+
+    [SerializeField] private UnityEvent eventsSound;
     // Start is called before the first frame update
     void Start()
     {
@@ -46,25 +49,41 @@ public class ControllerPhone : MonoBehaviour
         call.SetCall(contactData,this);
         call.gameObject.SetActive(true);
     }
-    public IEnumerator LoadScene(ContactData contactData)
+    public IEnumerator LoadScene(ContactData contactData,UnityEvent callback=null)
     {
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(contactData.nameScene, LoadSceneMode.Additive);
         yield return new WaitWhile(() => !asyncLoad.isDone);
         yield return new WaitForSeconds(5f);
         call.ChangeVistCam();
+        ControlladorScare controller= FindObjectOfType<ControlladorScare>();
+        call.ButtonCapture.GetComponent<Button>().onClick.RemoveAllListeners();
+        call.ButtonCapture.GetComponent<Button>().onClick.AddListener(controller.UpdateCam);
+        controller.UpdateCam();
+        call.activateButton(true);
     }
 
     public void CallEnd()
     {
-        call.ChangeVist();
-        call.gameObject.SetActive(false);
-        StartCoroutine(DeleteScenAdditive());
+        string message = FindObjectOfType<ControlladorScare>().CanEndTheCall();
+        if (message=="true")
+        {
+            eventsSound.Invoke();
+            call.activateButton(false);
+            call.ChangeVist();
+            call.gameObject.SetActive(false);
+            StartCoroutine(DeleteScenAdditive());
+        }
+        else
+        {
+            call.NotificationNotEndCall(message);
+        }
     }
     public IEnumerator DeleteScenAdditive()
     {
         AsyncOperation asyncLoad = SceneManager.UnloadSceneAsync(call.Data.nameScene);
         yield return new WaitWhile(() => !asyncLoad.isDone);
         yield return new WaitForSeconds(5f);
+        
 
     }
 

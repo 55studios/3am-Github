@@ -7,6 +7,7 @@ public class ControladorMainMenu : MonoBehaviour
 {
     [SerializeField] private CanvasGroup loadPanel;
     [SerializeField] private ControllerPhone _controllerPhone;
+    
 
     private void Start()
     {
