@@ -3702,7 +3702,14 @@ public class iTween : MonoBehaviour
 		vector3s[3] = thisTransform.eulerAngles;		
 		
 		//root:
-		vector3s[0]=thisTransform.position;
+		if(isLocal)
+		{
+			vector3s[0]=transform.localPosition;
+		}
+		else
+		{
+			vector3s[0]=transform.position;
+		}
 		
 		//amount:
 		if (tweenArguments.Contains("amount")) {

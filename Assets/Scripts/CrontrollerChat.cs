@@ -7,7 +7,8 @@ using UnityEngine.UI;
 public class CrontrollerChat : MonoBehaviour
 {
     [SerializeField] private Image imagesContact;
-    [SerializeField] private GameObject prefabMessage;
+    [SerializeField] private GameObject prefabMessageNPC;
+    [SerializeField] private GameObject prefabMessagePlayer;
     [SerializeField] private TMP_InputField inputMessage;
     [SerializeField] private Transform contentMessage;
     [SerializeField] private ContactData _contactData;
@@ -15,6 +16,8 @@ public class CrontrollerChat : MonoBehaviour
     [SerializeField] private Image imagesForInstantiate;
     public List<string> longAnswers=new List<string>(); 
     public List<string>  shortAnswers=new List<string>();
+    public TMP_Text npcAnimationWriting;
+    public bool npcWritting;
 
     public void SetChat(ContactData contactData)
     {
@@ -32,19 +35,25 @@ public class CrontrollerChat : MonoBehaviour
     }
     public void SendMessage()
     {
-        message = Instantiate(prefabMessage, contentMessage, false).GetComponent<ControllerPrefabMessage>();
+        message = Instantiate(prefabMessagePlayer, contentMessage, false).GetComponent<ControllerPrefabMessage>();
         message.SetMessage(Color.blue,inputMessage.text);
         inputMessage.text = "";
-        StartCoroutine(WaitingAnswer());
+        WaitingAnswer();
     }
 
-    IEnumerator WaitingAnswer()
+    void WaitingAnswer()
     {
-        yield return new WaitForSeconds(0.5f);
-        setMessageNPC();
+        if (npcWritting==true)
+        {
+            return;
+        }
+        npcWritting = true;
+        StartCoroutine(WaitNpcWrittin());
+        
     }
     public void setMessageNPC()
     {
+
         if (longAnswers.Count > 0||shortAnswers.Count > 0)
         {
             int split = message.Messages.text.Length;
@@ -53,7 +62,7 @@ public class CrontrollerChat : MonoBehaviour
                 if (longAnswers.Count > 0)
                 {
                     int ramdon = Random.Range(0, longAnswers.Count);
-                    message = Instantiate(prefabMessage, contentMessage, false).GetComponent<ControllerPrefabMessage>();
+                    message = Instantiate(prefabMessageNPC, contentMessage, false).GetComponent<ControllerPrefabMessage>();
                     message.SetMessage(Color.black, longAnswers[ramdon]);
                     longAnswers.Remove(longAnswers[ramdon]);
                 }
@@ -63,13 +72,12 @@ public class CrontrollerChat : MonoBehaviour
                    imagescare.sprite = _contactData.spriteScare[Random.Range(0, _contactData.spriteScare.Count)];
                 }
             }
-
             if (split < 10)
             {
                 if (shortAnswers.Count > 0)
                 {
                     int ramdon = Random.Range(0, shortAnswers.Count);
-                    message = Instantiate(prefabMessage, contentMessage, false).GetComponent<ControllerPrefabMessage>();
+                    message = Instantiate(prefabMessageNPC, contentMessage, false).GetComponent<ControllerPrefabMessage>();
                     message.SetMessage(Color.black, shortAnswers[ramdon]);
                     shortAnswers.Remove(shortAnswers[ramdon]);
                 }
@@ -82,11 +90,45 @@ public class CrontrollerChat : MonoBehaviour
         }
         else
         {
+            npcWritting = true;
             Image imagescare= Instantiate(imagesForInstantiate, contentMessage, false);
             imagescare.sprite = _contactData.spriteScare[Random.Range(0, _contactData.spriteScare.Count)];
         }
+        npcWritting = false;
     }
 
+    IEnumerator WaitNpcWrittin()
+    {
+        yield return new WaitForSeconds(0.5f);
+        float timeWait = Random.Range(1,3);
+        float time = 0;
+        int counPoint = 0;
+        string onePoint = ".";
+        string TwoPoint = "..";
+        string threePoint = "...";
+        while (time<timeWait)
+        {
+            if (counPoint==0)
+            {
+                npcAnimationWriting.text = _contactData.nameContact + onePoint;
+                counPoint++;
+            }
+            else if (counPoint==1)
+            {
+                npcAnimationWriting.text = _contactData.nameContact + TwoPoint;
+                counPoint++;
+            }
+            else
+            {
+                npcAnimationWriting.text = _contactData.nameContact + threePoint;
+                counPoint=0;
+            }
+            yield return new WaitForSeconds(0.80f);
+            time += 0.1f;
+        }
+        npcAnimationWriting.text = " ";
+        setMessageNPC();
+    }
     public void CloseChat()
     {
         _contactData = null;
