@@ -223,9 +223,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1420790153}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 94.66501, y: -426.8885}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 189.33, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &15128529
@@ -1229,9 +1229,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1420790153}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 94.66501, y: -366.8885}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 205.53998, y: 45.97}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &434852295
@@ -1365,7 +1365,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -121, y: 265.45505}
+  m_AnchoredPosition: {x: -121, y: 265.4551}
   m_SizeDelta: {x: 242, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &483375428
@@ -1594,7 +1594,14 @@ MonoBehaviour:
   longAnswers: []
   shortAnswers: []
   npcAnimationWriting: {fileID: 1587585772}
+  colorMessageNpc:
+    serializedVersion: 2
+    rgba: 4278190080
+  colorMessagePlayer:
+    serializedVersion: 2
+    rgba: 4284229166
   npcWritting: 0
+  countMessage: 0
 --- !u!1 &581716382
 GameObject:
   m_ObjectHideFlags: 0
@@ -2563,7 +2570,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &839823496
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3094,9 +3101,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1420790153}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 94.66501, y: -310.9185}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 330.407, y: 45.97}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &933848624
@@ -5055,9 +5062,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1420790153}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 94.66501, y: -161.045}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 223.327, y: 187.807}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1701253703
@@ -5333,6 +5340,18 @@ MonoBehaviour:
       - m_Target: {fileID: 514971345}
         m_TargetAssemblyTypeName: CrontrollerChat, Assembly-CSharp
         m_MethodName: SendMessage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 841090580}
+        m_TargetAssemblyTypeName: TMPro.TMP_InputField, Unity.TextMeshPro
+        m_MethodName: ActivateInputField
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5877,7 +5896,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 669976485}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.99881464
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -6027,9 +6046,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1420790153}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 94.66501, y: -532.8585}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 205.53998, y: 45.97}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &2056529972

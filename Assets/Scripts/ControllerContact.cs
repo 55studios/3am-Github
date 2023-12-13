@@ -31,6 +31,13 @@ public class ControllerContact : MonoBehaviour
     {
         imageContact.sprite = _dataContact.spriteContact;
         nameContact.text = _dataContact.nameContact;
+        if (!_dataContact.purchasedContact)
+        {
+            var tempColor = imageContact.color;
+            tempColor.a = 0.5f;
+            imageContact.color = tempColor;
+            Debug.Log("11111");
+        }
     }
 
     public void InitChat()

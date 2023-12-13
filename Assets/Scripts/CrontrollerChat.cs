@@ -17,10 +17,13 @@ public class CrontrollerChat : MonoBehaviour
     public List<string> longAnswers=new List<string>(); 
     public List<string>  shortAnswers=new List<string>();
     public TMP_Text npcAnimationWriting;
+    public Color32 colorMessageNpc;
+    public Color32 colorMessagePlayer;
     public bool npcWritting;
-
+    public int countMessage;
     public void SetChat(ContactData contactData)
     {
+        countMessage = 0;
         _contactData = contactData;
         imagesContact.sprite = _contactData.spriteContact;
         foreach (var VARIABLE in contactData.longAnswers)
@@ -36,7 +39,7 @@ public class CrontrollerChat : MonoBehaviour
     public void SendMessage()
     {
         message = Instantiate(prefabMessagePlayer, contentMessage, false).GetComponent<ControllerPrefabMessage>();
-        message.SetMessage(Color.blue,inputMessage.text);
+        message.SetMessage(colorMessagePlayer,inputMessage.text);
         inputMessage.text = "";
         WaitingAnswer();
     }
@@ -57,13 +60,13 @@ public class CrontrollerChat : MonoBehaviour
         if (longAnswers.Count > 0||shortAnswers.Count > 0)
         {
             int split = message.Messages.text.Length;
-            if (split >= 10)
+            if (split >= 6)
             {
-                if (longAnswers.Count > 0)
+                if (longAnswers.Count > 4)
                 {
                     int ramdon = Random.Range(0, longAnswers.Count);
                     message = Instantiate(prefabMessageNPC, contentMessage, false).GetComponent<ControllerPrefabMessage>();
-                    message.SetMessage(Color.black, longAnswers[ramdon]);
+                    message.SetMessage(colorMessageNpc, longAnswers[ramdon]);
                     longAnswers.Remove(longAnswers[ramdon]);
                 }
                 else
@@ -72,9 +75,9 @@ public class CrontrollerChat : MonoBehaviour
                    imagescare.sprite = _contactData.spriteScare[Random.Range(0, _contactData.spriteScare.Count)];
                 }
             }
-            if (split < 10)
+            if (split < 6)
             {
-                if (shortAnswers.Count > 0)
+                if (shortAnswers.Count > 4)
                 {
                     int ramdon = Random.Range(0, shortAnswers.Count);
                     message = Instantiate(prefabMessageNPC, contentMessage, false).GetComponent<ControllerPrefabMessage>();
@@ -87,6 +90,17 @@ public class CrontrollerChat : MonoBehaviour
                     imagescare.sprite = _contactData.spriteScare[Random.Range(0, _contactData.spriteScare.Count)];
                 }
             }
+
+            if (countMessage>6)
+            {
+                int inten = Random.Range(0, 2);
+                if(inten==1)
+                {
+                    Image imagescare= Instantiate(imagesForInstantiate, contentMessage, false);
+                    imagescare.sprite = _contactData.spriteScare[Random.Range(0, _contactData.spriteScare.Count)];
+                }
+
+            }
         }
         else
         {
@@ -95,6 +109,7 @@ public class CrontrollerChat : MonoBehaviour
             imagescare.sprite = _contactData.spriteScare[Random.Range(0, _contactData.spriteScare.Count)];
         }
         npcWritting = false;
+        countMessage++;
     }
 
     IEnumerator WaitNpcWrittin()
