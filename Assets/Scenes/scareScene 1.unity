@@ -768,13 +768,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 148310730}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.079459034, y: -0.78656507, z: -0.10355331, w: 0.60355484}
-  m_LocalPosition: {x: -26.33, y: 1.97, z: -16.04}
+  m_LocalRotation: {x: -0.12172196, y: -0.77733135, z: -0.15863122, w: 0.5964696}
+  m_LocalPosition: {x: -27.51, y: 2.19, z: -16.35}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: -15, y: -105, z: 0}
+  m_LocalEulerAnglesHint: {x: -23.068, y: -105, z: 0}
 --- !u!114 &148310734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3728,8 +3728,6 @@ MonoBehaviour:
   _animator: {fileID: 1722120852}
   timeWaitInitChangeCamera: 7
   timeWaitEndChangeCamera: 12
-  time: 0
-  timeActivateButton: 0
 --- !u!4 &1079595917
 Transform:
   m_ObjectHideFlags: 0
@@ -3850,14 +3848,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84b4fd24455642f48b41187e4159a89b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shakeForcePositionX: 0
-  shakeForcePositionY: 0
-  shakeForcePositionZ: 0
-  shakeForcePositionRotationX: 0
-  shakeForcePositionRotationY: 0
-  shakeForcePositionRotationZ: 0
-  timeShakePost: 0
-  timeShakeRot: 0
+  shakeForcePositionX: 0.001
+  shakeForcePositionY: 0.0021
+  shakeForcePositionZ: 0.00051
+  shakeForcePositionRotationX: 0.01
+  shakeForcePositionRotationY: 0.05
+  shakeForcePositionRotationZ: 0.09
+  timeShakePost: 40000
+  timeShakeRot: 800000
 --- !u!1 &1133627963
 GameObject:
   m_ObjectHideFlags: 0
@@ -3963,14 +3961,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84b4fd24455642f48b41187e4159a89b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shakeForcePositionX: 0
-  shakeForcePositionY: 0
-  shakeForcePositionZ: 0
-  shakeForcePositionRotationX: 0
-  shakeForcePositionRotationY: 0
-  shakeForcePositionRotationZ: 0
-  timeShakePost: 0
-  timeShakeRot: 0
+  shakeForcePositionX: 0.001
+  shakeForcePositionY: 0.0021
+  shakeForcePositionZ: 0.00051
+  shakeForcePositionRotationX: 0.01
+  shakeForcePositionRotationY: 0.05
+  shakeForcePositionRotationZ: 0.09
+  timeShakePost: 40000
+  timeShakeRot: 800000
 --- !u!1 &1230904720
 GameObject:
   m_ObjectHideFlags: 0
@@ -4076,14 +4074,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84b4fd24455642f48b41187e4159a89b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shakeForcePositionX: 0
-  shakeForcePositionY: 0
-  shakeForcePositionZ: 0
-  shakeForcePositionRotationX: 0
-  shakeForcePositionRotationY: 0
-  shakeForcePositionRotationZ: 0
-  timeShakePost: 0
-  timeShakeRot: 0
+  shakeForcePositionX: 0.001
+  shakeForcePositionY: 0.0021
+  shakeForcePositionZ: 0.00051
+  shakeForcePositionRotationX: 0.01
+  shakeForcePositionRotationY: 0.05
+  shakeForcePositionRotationZ: 0.09
+  timeShakePost: 40000
+  timeShakeRot: 800000
 --- !u!1 &1309054946
 GameObject:
   m_ObjectHideFlags: 0
@@ -4479,14 +4477,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84b4fd24455642f48b41187e4159a89b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shakeForcePositionX: 0
-  shakeForcePositionY: 0
-  shakeForcePositionZ: 0
-  shakeForcePositionRotationX: 0
-  shakeForcePositionRotationY: 0
-  shakeForcePositionRotationZ: 0
-  timeShakePost: 0
-  timeShakeRot: 0
+  shakeForcePositionX: 0.001
+  shakeForcePositionY: 0.0021
+  shakeForcePositionZ: 0.00051
+  shakeForcePositionRotationX: 0.01
+  shakeForcePositionRotationY: 0.05
+  shakeForcePositionRotationZ: 0.09
+  timeShakePost: 40000
+  timeShakeRot: 800000
 --- !u!1 &1881630038
 GameObject:
   m_ObjectHideFlags: 0
@@ -4592,14 +4590,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84b4fd24455642f48b41187e4159a89b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shakeForcePositionX: 0
-  shakeForcePositionY: 0
-  shakeForcePositionZ: 0
-  shakeForcePositionRotationX: 0
-  shakeForcePositionRotationY: 0
-  shakeForcePositionRotationZ: 0
-  timeShakePost: 0
-  timeShakeRot: 0
+  shakeForcePositionX: 0.001
+  shakeForcePositionY: 0.0021
+  shakeForcePositionZ: 0.00051
+  shakeForcePositionRotationX: 0.01
+  shakeForcePositionRotationY: 0.05
+  shakeForcePositionRotationZ: 0.09
+  timeShakePost: 40000
+  timeShakeRot: 800000
 --- !u!1 &1949076171
 GameObject:
   m_ObjectHideFlags: 0

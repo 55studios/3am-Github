@@ -1767,7 +1767,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -121, y: 265.45496}
+  m_AnchoredPosition: {x: -121, y: 265.45517}
   m_SizeDelta: {x: 242, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &483375428
@@ -1999,8 +1999,8 @@ MonoBehaviour:
   npcWaitAnimation: {fileID: 222479630}
   npcWritting: 0
   countMessage: 0
-  timeRamdonInitNPCWriting: 0.5
-  timeRamdonEndNPCWriting: 1.5
+  timeRamdonInitNPCWriting: 1
+  timeRamdonEndNPCWriting: 3
   timeWaitNPCWriting: 0.5
   timeScale: 0.02
   colorMessageNpc:
@@ -2008,7 +2008,7 @@ MonoBehaviour:
     rgba: 4278190080
   colorMessagePlayer:
     serializedVersion: 2
-    rgba: 4284229166
+    rgba: 4283593528
 --- !u!1 &581716382
 GameObject:
   m_ObjectHideFlags: 0
