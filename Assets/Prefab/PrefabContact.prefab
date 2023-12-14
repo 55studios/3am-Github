@@ -207,16 +207,16 @@ MonoBehaviour:
   eventSound:
     m_PersistentCalls:
       m_Calls: []
-  alphaColorImageContact: 0.5
+  alphaColorImageContact: 0.306
   colorContactContainer:
     serializedVersion: 2
-    rgba: 4288322202
+    rgba: 4293519849
   colorSelect:
     serializedVersion: 2
-    rgba: 4278190080
+    rgba: 4282466625
   colorDeselect:
     serializedVersion: 2
-    rgba: 4288322202
+    rgba: 4294967295
 --- !u!1 &1465412471303814390
 GameObject:
   m_ObjectHideFlags: 0
