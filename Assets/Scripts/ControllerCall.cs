@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class ControllerCall : MonoBehaviour
@@ -13,26 +14,39 @@ public class ControllerCall : MonoBehaviour
     [SerializeField] private GameObject camRender;
     [SerializeField] private GameObject panelCall;
     [SerializeField] private GameObject buttonCapture;
+    [SerializeField] private TMP_Text textTotalCapture;
+    [SerializeField] private int captures;
+    [SerializeField] private int capturesTotal;
+    [SerializeField] private GameObject buttonChangeCamera;
     [SerializeField] private TMP_Text textNotEnCall;
-    [field: SerializeField] public ContactData Data { get; private set; }
-    [SerializeField] private ControllerPhone _controllerPhone;
+    [SerializeField] private Button buttonEndCall; 
+    public ContactData _contactData { get; private set; }
     [SerializeField] private bool notificationActive;
+    [SerializeField] private float timeCallWait;
+    [SerializeField] private TMP_Text messageCall;
+    [SerializeField] private GameObject animationPoint;
     [SerializeField] private UnityEvent eventsSound;
+
     public GameObject ButtonCapture
     {
-        get => buttonCapture;
+        get => buttonChangeCamera;
     }
-    
+
+    public void ActivateButtonChangeCam(bool state)
+    {
+        buttonChangeCamera.GetComponent<Button>().interactable = state;
+    }
     public void SetCall(ContactData contactData, ControllerPhone controllerPhone)
     {
-        _controllerPhone = controllerPhone;
         camRender.SetActive(false);
         panelCall.SetActive(true);
         eventsSound.Invoke();
-        Data = contactData;
-        imageContact.sprite = Data.spriteContact;
-        backGround.sprite = Data.spriteContact;
+        _contactData = contactData;
+        imageContact.sprite = _contactData.spriteContact;
+        backGround.sprite = _contactData.spriteContact;
         gameObject.SetActive(true);
+        messageCall.text = _contactData.nameContact;
+        animationPoint.SetActive(true);
         StartCoroutine(controllerPhone.LoadScene(contactData));
     }
 
@@ -40,8 +54,15 @@ public class ControllerCall : MonoBehaviour
     {
         camRender.SetActive(false);
         panelCall.SetActive(true);
+        EndCallMessaje();
+        StartCoroutine(WaitEndCall());
     }
 
+    IEnumerator WaitEndCall()
+    {
+        yield return new WaitForSeconds(2);
+        gameObject.SetActive(false);
+    }
     public void ChangeVistCam()
     {
         camRender.SetActive(true);
@@ -50,7 +71,11 @@ public class ControllerCall : MonoBehaviour
 
     public void activateButton(bool state)
     {
+        buttonChangeCamera.SetActive(state);
         buttonCapture.SetActive(state);
+        buttonEndCall.interactable = state;
+        textTotalCapture.gameObject.SetActive(state);
+        textTotalCapture.text = captures + "/" + capturesTotal;
     }
 
     public void NotificationNotEndCall(string message)
@@ -69,5 +94,20 @@ public class ControllerCall : MonoBehaviour
         yield return new WaitForSeconds(3);
         textNotEnCall.color = new Color(255,255,255,0);
         notificationActive = false;
+    }
+
+    public void EndCallMessaje()
+    {
+        messageCall.text = "Call End";
+        animationPoint.SetActive(false);
+    }
+
+    public void CapturePhoto()
+    {
+        if (captures<capturesTotal)
+        {
+            captures++;
+            textTotalCapture.text = captures + "/" + capturesTotal;
+        }
     }
 }

@@ -11,12 +11,17 @@ public class ControllerContact : MonoBehaviour
     [SerializeField] private Image imageContact;
     [SerializeField] private TMP_Text nameContact;
     [SerializeField] private GameObject blockRayCast;
-    [SerializeField] private Color32 colorSelect;
-    [SerializeField] private Color32 colorDeselect;
     [SerializeField] private GameObject panelButtons;
+    [SerializeField] private Image ContactContainer;
     [SerializeField] private UnityEvent eventSound;
     private ContactData _dataContact;
     private ControllerPhone controllerPhone;
+
+    [Header("Color Panel Settings")] 
+    [Range(0.0f, 1f)] [SerializeField] private float alphaColorImageContact;
+    [SerializeField] private Color32 colorContactContainer;
+    [SerializeField] private Color32 colorSelect;
+    [SerializeField] private Color32 colorDeselect;
     
 
     public ContactData DataContact
@@ -34,9 +39,9 @@ public class ControllerContact : MonoBehaviour
         if (!_dataContact.purchasedContact)
         {
             var tempColor = imageContact.color;
-            tempColor.a = 0.5f;
+            tempColor.a = alphaColorImageContact;
             imageContact.color = tempColor;
-            Debug.Log("11111");
+            ContactContainer.color = colorContactContainer;
         }
     }
 

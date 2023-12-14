@@ -70,7 +70,6 @@ public class ControllerPhone : MonoBehaviour
             eventsSound.Invoke();
             call.activateButton(false);
             call.ChangeVist();
-            call.gameObject.SetActive(false);
             StartCoroutine(DeleteScenAdditive());
         }
         else
@@ -80,11 +79,9 @@ public class ControllerPhone : MonoBehaviour
     }
     public IEnumerator DeleteScenAdditive()
     {
-        AsyncOperation asyncLoad = SceneManager.UnloadSceneAsync(call.Data.nameScene);
+        AsyncOperation asyncLoad = SceneManager.UnloadSceneAsync(call._contactData.nameScene);
         yield return new WaitWhile(() => !asyncLoad.isDone);
         yield return new WaitForSeconds(5f);
-        
-
     }
 
     public void ChangeStateContact()

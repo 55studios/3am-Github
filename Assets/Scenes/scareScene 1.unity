@@ -787,8 +787,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84b4fd24455642f48b41187e4159a89b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shakeForce: 0.5
-  time: 500
+  shakeForcePositionX: 0.1
+  shakeForcePositionY: 0.1
+  shakeForcePositionZ: 0.1
+  shakeForcePositionRotationX: 0.1
+  shakeForcePositionRotationY: 0.1
+  shakeForcePositionRotationZ: 0.1
+  timeShakePost: 500
+  timeShakeRot: 500
 --- !u!1 &247962640 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: bfb0760de7ce2aa41b2fff2e5596b25a, type: 3}
@@ -3720,6 +3726,10 @@ MonoBehaviour:
   - de que tienes miedo
   - ESTO NO HA TERMINADO
   _animator: {fileID: 1722120852}
+  timeWaitInitChangeCamera: 7
+  timeWaitEndChangeCamera: 12
+  time: 0
+  timeActivateButton: 0
 --- !u!4 &1079595917
 Transform:
   m_ObjectHideFlags: 0
@@ -3746,6 +3756,7 @@ GameObject:
   - component: {fileID: 1081897969}
   - component: {fileID: 1081897968}
   - component: {fileID: 1081897967}
+  - component: {fileID: 1081897970}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -3827,6 +3838,26 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -36.641, y: -76.366, z: -6.341}
+--- !u!114 &1081897970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1081897966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84b4fd24455642f48b41187e4159a89b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shakeForcePositionX: 0
+  shakeForcePositionY: 0
+  shakeForcePositionZ: 0
+  shakeForcePositionRotationX: 0
+  shakeForcePositionRotationY: 0
+  shakeForcePositionRotationZ: 0
+  timeShakePost: 0
+  timeShakeRot: 0
 --- !u!1 &1133627963
 GameObject:
   m_ObjectHideFlags: 0
@@ -3838,6 +3869,7 @@ GameObject:
   - component: {fileID: 1133627966}
   - component: {fileID: 1133627965}
   - component: {fileID: 1133627964}
+  - component: {fileID: 1133627967}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -3919,6 +3951,26 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 14.477, y: -164.496, z: 3.967}
+--- !u!114 &1133627967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1133627963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84b4fd24455642f48b41187e4159a89b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shakeForcePositionX: 0
+  shakeForcePositionY: 0
+  shakeForcePositionZ: 0
+  shakeForcePositionRotationX: 0
+  shakeForcePositionRotationY: 0
+  shakeForcePositionRotationZ: 0
+  timeShakePost: 0
+  timeShakeRot: 0
 --- !u!1 &1230904720
 GameObject:
   m_ObjectHideFlags: 0
@@ -3930,6 +3982,7 @@ GameObject:
   - component: {fileID: 1230904723}
   - component: {fileID: 1230904722}
   - component: {fileID: 1230904721}
+  - component: {fileID: 1230904724}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -4011,6 +4064,26 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -30, y: 15, z: 0}
+--- !u!114 &1230904724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1230904720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84b4fd24455642f48b41187e4159a89b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shakeForcePositionX: 0
+  shakeForcePositionY: 0
+  shakeForcePositionZ: 0
+  shakeForcePositionRotationX: 0
+  shakeForcePositionRotationY: 0
+  shakeForcePositionRotationZ: 0
+  timeShakePost: 0
+  timeShakeRot: 0
 --- !u!1 &1309054946
 GameObject:
   m_ObjectHideFlags: 0
@@ -4312,6 +4385,7 @@ GameObject:
   - component: {fileID: 1860961017}
   - component: {fileID: 1860961016}
   - component: {fileID: 1860961015}
+  - component: {fileID: 1860961018}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -4393,6 +4467,26 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &1860961018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1860961013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84b4fd24455642f48b41187e4159a89b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shakeForcePositionX: 0
+  shakeForcePositionY: 0
+  shakeForcePositionZ: 0
+  shakeForcePositionRotationX: 0
+  shakeForcePositionRotationY: 0
+  shakeForcePositionRotationZ: 0
+  timeShakePost: 0
+  timeShakeRot: 0
 --- !u!1 &1881630038
 GameObject:
   m_ObjectHideFlags: 0
@@ -4404,6 +4498,7 @@ GameObject:
   - component: {fileID: 1881630041}
   - component: {fileID: 1881630040}
   - component: {fileID: 1881630039}
+  - component: {fileID: 1881630042}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -4485,6 +4580,26 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -12.948, y: -210.866, z: 7.628}
+--- !u!114 &1881630042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1881630038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84b4fd24455642f48b41187e4159a89b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shakeForcePositionX: 0
+  shakeForcePositionY: 0
+  shakeForcePositionZ: 0
+  shakeForcePositionRotationX: 0
+  shakeForcePositionRotationY: 0
+  shakeForcePositionRotationZ: 0
+  timeShakePost: 0
+  timeShakeRot: 0
 --- !u!1 &1949076171
 GameObject:
   m_ObjectHideFlags: 0

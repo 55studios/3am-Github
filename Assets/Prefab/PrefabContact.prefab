@@ -202,16 +202,21 @@ MonoBehaviour:
   imageContact: {fileID: 140904211532671841}
   nameContact: {fileID: 9067880494736096918}
   blockRayCast: {fileID: 8478029606765527973}
+  panelButtons: {fileID: 1465412471303814390}
+  ContactContainer: {fileID: 950683571249325075}
+  eventSound:
+    m_PersistentCalls:
+      m_Calls: []
+  alphaColorImageContact: 0.5
+  colorContactContainer:
+    serializedVersion: 2
+    rgba: 4288322202
   colorSelect:
     serializedVersion: 2
     rgba: 4278190080
   colorDeselect:
     serializedVersion: 2
     rgba: 4288322202
-  panelButtons: {fileID: 1465412471303814390}
-  eventSound:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &1465412471303814390
 GameObject:
   m_ObjectHideFlags: 0

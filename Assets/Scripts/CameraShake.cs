@@ -6,8 +6,14 @@ using UnityEngine;
 
 public class CameraShake : MonoBehaviour
 {
-    [SerializeField] private float shakeForce;
-    [SerializeField] private float time;
+    [SerializeField] private float shakeForcePositionX;
+    [SerializeField] private float shakeForcePositionY;
+    [SerializeField] private float shakeForcePositionZ;
+    [SerializeField] private float shakeForcePositionRotationX;
+    [SerializeField] private float shakeForcePositionRotationY;
+    [SerializeField] private float shakeForcePositionRotationZ;
+    [SerializeField] private float timeShakePost;
+    [SerializeField] private float timeShakeRot;
     private void Start()
     {
         Onshake();
@@ -18,13 +24,13 @@ public class CameraShake : MonoBehaviour
     {
         iTween.ShakePosition(gameObject,
             iTween.Hash(
-                "x", 0.05,"y",0.095,
-                "time", 500f
+                "x", shakeForcePositionX,"y",shakeForcePositionY,"Z",shakeForcePositionZ,
+                "time", timeShakePost
             ));
          iTween.ShakeRotation(gameObject,
              iTween.Hash(
-                 "x", 0.095,"y",0.05,
-                 "time", 500f
+                 "x", shakeForcePositionRotationX,"y",shakeForcePositionRotationY,"Z",shakeForcePositionRotationZ,
+                 "time", timeShakeRot
              ));
     }
 }

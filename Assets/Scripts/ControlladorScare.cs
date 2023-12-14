@@ -14,15 +14,33 @@ public class ControlladorScare : MonoBehaviour
     [SerializeField] private int timeWait;
     [SerializeField] private List<string> listMessageNoEndCall = new List<string>();
     [SerializeField] private Animator _animator;
-
+    [SerializeField] private float timeWaitInitChangeCamera;
+    [SerializeField] private float timeWaitEndChangeCamera;
+    private float time;
+    private float timeActivateButton;
+    public void ActivateChangeCamAutomatic()
+    {
+        StartCoroutine(ChangeCamAutomatic());
+    }
+    public IEnumerator ChangeCamAutomatic()
+    {
+        time = Random.Range(timeWaitInitChangeCamera, timeWaitEndChangeCamera);
+        timeActivateButton = time - 4;
+        yield return new WaitForSeconds(timeActivateButton);
+        FindObjectOfType<ControllerCall>().ActivateButtonChangeCam(true);
+        yield return new WaitForSeconds(time-timeActivateButton);
+        UpdateCam();
+    }
     public void UpdateCam()
     {
+        StopAllCoroutines();
         StartCoroutine(MoveCamWithTime());
     }
 
     IEnumerator MoveCamWithTime()
     {
         yield return new WaitForSeconds(0.5f);
+        FindObjectOfType<ControllerCall>().ActivateButtonChangeCam(false);
         if (!camScare.activeInHierarchy)
         {
 
@@ -50,6 +68,7 @@ public class ControlladorScare : MonoBehaviour
                 panelTvStatic.worldCamera = camActive.GetComponent<Camera>();
                 camActive.SetActive(true);
                 pointMoveCamera.Remove(camActive);
+
             }
             else
             {
@@ -79,7 +98,13 @@ public class ControlladorScare : MonoBehaviour
 
             yield return new WaitForSeconds(1f);
             panelTvStatic.gameObject.SetActive(false);
+            if (camScare.activeInHierarchy)
+            {
+                yield return new WaitForSeconds(3);
+                FindObjectOfType<ControllerPhone>().CallEnd();
+            }
         }
+        ActivateChangeCamAutomatic();
     }
     public string CanEndTheCall()
     {
