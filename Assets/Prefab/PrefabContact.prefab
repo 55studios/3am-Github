@@ -66,15 +66,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6037736, g: 0.6037736, b: 0.6037736, a: 1}
+  m_Color: {r: 0.2924528, g: 0.16691881, b: 0.16691881, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 272f2b0cc9940bd4c80912461e5187d7, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -210,13 +210,13 @@ MonoBehaviour:
   alphaColorImageContact: 0.306
   colorContactContainer:
     serializedVersion: 2
-    rgba: 4293519849
+    rgba: 4291809257
   colorSelect:
     serializedVersion: 2
-    rgba: 4282466625
+    rgba: 4279308609
   colorDeselect:
     serializedVersion: 2
-    rgba: 4286677377
+    rgba: 4284835201
 --- !u!1 &1465412471303814390
 GameObject:
   m_ObjectHideFlags: 0
@@ -279,15 +279,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 0.1981132, g: 0.18035777, b: 0.18035777, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 74dc7dbb4d2113e4fa071e03e0107a12, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -538,7 +538,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.7830189, g: 0.7793254, b: 0.7793254, a: 1}
+  m_Color: {r: 0.101960786, g: 0.063725494, b: 0.063725494, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -789,7 +789,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.0522995, y: -0.50860023}
+  m_AnchoredPosition: {x: 0.0522995, y: -0.5085983}
   m_SizeDelta: {x: 18.6376, y: 12.168}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2556989491122557893
