@@ -2329,9 +2329,9 @@ MonoBehaviour:
   panelTvStatic: {fileID: 993690237}
   timeWait: 6
   listMessageNoEndCall:
-  - No puedes terminar esta llamada
-  - de que tienes miedo
-  - ESTO NO HA TERMINADO
+  - You Can't finish now
+  - What are you afraid of?
+  - We're not done
   _animator: {fileID: 1722120852}
   timeWaitInitChangeCamera: 7
   timeWaitEndChangeCamera: 12
