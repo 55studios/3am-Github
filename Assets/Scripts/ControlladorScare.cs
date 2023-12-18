@@ -47,57 +47,26 @@ public class ControlladorScare : MonoBehaviour
             if (pointMoveCamera.Count==0)
             {
                 panelTvStatic.gameObject.SetActive(true);
-                int randomStatic = Random.Range(0, 3);
-                switch (randomStatic)
-                {
-                    case 0:
-                        _animator.SetBool("State1",true);
-                        break;
-                    case 1:
-                        _animator.SetBool("State2",true);
-                        break;
-                    case 3:
-                        _animator.SetBool("State3",true);
-                        break;
-                    default:
-                        _animator.SetBool("State1",true);
-                        break;
-                }
-                camActive.SetActive(false);
+                panelTvStatic.GetComponent<AudioSource>().Play();
+                RandomPaneLTV();
+                camActive.GetComponent<ControllerCamera>().DesactivateCamera();
                 camActive = camScare;
-                panelTvStatic.worldCamera = camActive.GetComponent<Camera>();
-                camActive.SetActive(true);
-                pointMoveCamera.Remove(camActive);
-
             }
             else
             {
                 panelTvStatic.gameObject.SetActive(true);
-                int randomStatic = Random.Range(0, 3);
-                switch (randomStatic)
-                {
-                    case 0:
-                        _animator.SetBool("State1",true);
-                        break;
-                    case 1:
-                        _animator.SetBool("State2",true);
-                        break;
-                    case 3:
-                        _animator.SetBool("State3",true);
-                        break;
-                    default:
-                        _animator.SetBool("State1",true);
-                        break;
-                }
-                camActive.SetActive(false);
+                panelTvStatic.GetComponent<AudioSource>().Play();
+                RandomPaneLTV();
+                camActive.GetComponent<ControllerCamera>().DesactivateCamera();
                 camActive = pointMoveCamera[Random.Range(0, pointMoveCamera.Count)];
-                camActive.SetActive(true);
-                panelTvStatic.worldCamera = camActive.GetComponent<Camera>();
-                pointMoveCamera.Remove(camActive);
             }
-
+            panelTvStatic.worldCamera = camActive.GetComponent<Camera>();
+            camActive.SetActive(true);
             yield return new WaitForSeconds(1f);
+            camActive.GetComponent<ControllerCamera>().ActivateCamera(panelTvStatic);
             panelTvStatic.gameObject.SetActive(false);
+            panelTvStatic.GetComponent<AudioSource>().Stop();
+            pointMoveCamera.Remove(camActive);
             if (camScare.activeInHierarchy)
             {
                 yield return new WaitForSeconds(3);
@@ -106,6 +75,27 @@ public class ControlladorScare : MonoBehaviour
         }
         ActivateChangeCamAutomatic();
     }
+
+    private void RandomPaneLTV()
+    {
+        int randomStatic = Random.Range(0, 3);
+        switch (randomStatic)
+        {
+            case 0:
+                _animator.SetBool("State1", true);
+                break;
+            case 1:
+                _animator.SetBool("State2", true);
+                break;
+            case 3:
+                _animator.SetBool("State3", true);
+                break;
+            default:
+                _animator.SetBool("State1", true);
+                break;
+        }
+    }
+
     public string CanEndTheCall()
     {
         if (camScare.activeInHierarchy)

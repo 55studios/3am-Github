@@ -26,7 +26,6 @@ public class ControllerCall : MonoBehaviour
     [SerializeField] private TMP_Text messageCall;
     [SerializeField] private GameObject animationPoint;
     [SerializeField] private UnityEvent eventsSound;
-
     public GameObject ButtonCapture
     {
         get => buttonChangeCamera;
@@ -110,4 +109,6 @@ public class ControllerCall : MonoBehaviour
             textTotalCapture.text = captures + "/" + capturesTotal;
         }
     }
+
+
 }

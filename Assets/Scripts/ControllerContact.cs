@@ -42,15 +42,18 @@ public class ControllerContact : MonoBehaviour
             tempColor.a = alphaColorImageContact;
             imageContact.color = tempColor;
             ContactContainer.color = colorContactContainer;
+            GetComponent<Image>().color = colorContactContainer;
         }
     }
 
     public void InitChat()
     {
+        controllerPhone.SoundClickButton();
         controllerPhone.InitChat(_dataContact);
     }
     public void InitCall()
     {
+        controllerPhone.SoundClickButton();
         controllerPhone.InitCall(_dataContact);
     }
 
@@ -89,7 +92,7 @@ public class ControllerContact : MonoBehaviour
         iTween.MoveTo(
             panelButtons,
             iTween.Hash(
-                "position", new Vector3(3,0),
+                "position", new Vector3(-40,0),
                 "looktarget", Camera.main,
                 "easeType", iTween.EaseType.easeOutExpo,
                 "time", 1f,
@@ -99,6 +102,7 @@ public class ControllerContact : MonoBehaviour
     }
     public void SelectContact()
     {
+        controllerPhone.SoundSelectContact();
         OpenPanel();
         imageBackGround.color = colorSelect;
         blockRayCast.SetActive(false);
@@ -106,7 +110,16 @@ public class ControllerContact : MonoBehaviour
     public void DeselectContact()
     {
         ClosePanel();
-        imageBackGround.color = colorDeselect;
+        if (!_dataContact.purchasedContact)
+        {
+            ContactContainer.color = colorContactContainer;
+            GetComponent<Image>().color = colorContactContainer;
+        }
+        else
+        {
+            imageBackGround.color = colorDeselect;
+        }
+
         blockRayCast.SetActive(true);
     }
 }

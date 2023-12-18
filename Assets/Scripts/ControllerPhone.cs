@@ -6,6 +6,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 public class ControllerPhone : MonoBehaviour
 {
@@ -15,21 +16,29 @@ public class ControllerPhone : MonoBehaviour
     [SerializeField] private CrontrollerChat chat;
     [SerializeField] private ControllerCall call;
     [SerializeField] private ControllerPurchasing Purchasing;
-
+    [SerializeField] private float timeForLoadSceneScare;
+    [SerializeField] private float randomInitTimeForLoadSceneScare;
+    [SerializeField] private float randomEndTimeForLoadSceneScare;
     [SerializeField] private UnityEvent eventsSound;
+
+    [SerializeField] private AudioSource _audioSource;
+
+    [SerializeField] private AudioClip clipSelectContact;
+    [SerializeField] private AudioClip clipButton;
+    [SerializeField] private AudioClip clipCall;
+    [SerializeField] private AudioClip clipCallEnd;
     // Start is called before the first frame update
     void Start()
     {
-        FactoryContact();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        //FactoryContact();
     }
 
     public void FactoryContact()
+    {
+        StartCoroutine(Factory());
+    }
+
+    public IEnumerator Factory()
     {
         foreach (var contact in _listDataContact.listContact)
         {
@@ -38,38 +47,56 @@ public class ControllerPhone : MonoBehaviour
             cont.GetComponent<ControllerContact>().StartContact();
             cont.GetComponent<ControllerContact>().ControllerPhone=this;
         }
-    }
 
+        yield return new WaitForSeconds(0.01f);
+    }
     public void InitChat(ContactData contactData)
     {
+
         chat.SetChat(contactData);
     }
     public void InitCall(ContactData contactData)
     {
+        
         call.SetCall(contactData,this);
+        SoundInitCall();
         call.gameObject.SetActive(true);
     }
     public IEnumerator LoadScene(ContactData contactData,UnityEvent callback=null)
     {
-        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(contactData.nameScene, LoadSceneMode.Additive);
-        yield return new WaitWhile(() => !asyncLoad.isDone);
-        yield return new WaitForSeconds(5f);
-        call.ChangeVistCam();
-        ControlladorScare controller= FindObjectOfType<ControlladorScare>();
-        call.ButtonCapture.GetComponent<Button>().onClick.RemoveAllListeners();
-        call.ButtonCapture.GetComponent<Button>().onClick.AddListener(controller.UpdateCam);
-        controller.UpdateCam();
-        call.activateButton(true);
+        int callEndTime = Random.Range(0, 10);
+        if (callEndTime==3)
+        {
+            
+            CallEnd();
+        }
+        else
+        {
+            timeForLoadSceneScare = Random.Range(randomInitTimeForLoadSceneScare, randomEndTimeForLoadSceneScare);
+            AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(contactData.nameScene, LoadSceneMode.Additive);
+            yield return new WaitWhile(() => !asyncLoad.isDone);
+            yield return new WaitForSeconds(timeForLoadSceneScare);
+            _audioSource.Stop();
+            call.ChangeVistCam();
+            ControlladorScare controller= FindObjectOfType<ControlladorScare>();
+            call.ButtonCapture.GetComponent<Button>().onClick.RemoveAllListeners();
+            call.ButtonCapture.GetComponent<Button>().onClick.AddListener(controller.UpdateCam);
+            controller.UpdateCam();
+            call.activateButton(true);
+        }
+
     }
 
     public void CallEnd()
     {
+        SoundCallEnd();
         string message = FindObjectOfType<ControlladorScare>().CanEndTheCall();
         if (message=="true")
         {
             eventsSound.Invoke();
             call.activateButton(false);
             call.ChangeVist();
+            SoundCallEnd();
             StartCoroutine(DeleteScenAdditive());
         }
         else
@@ -94,5 +121,26 @@ public class ControllerPhone : MonoBehaviour
     public void SetPanelpurchasing(ContactData contactData)
     {
         Purchasing.StartPurchasing(contactData);
+    }
+
+    public void SoundSelectContact()
+    {
+        _audioSource.clip = clipSelectContact;
+        _audioSource.Play();
+    }
+    public void SoundClickButton()
+    {
+        _audioSource.clip = clipButton;
+        _audioSource.Play();
+    }
+    public void SoundInitCall()
+    {
+        _audioSource.clip = clipCall;
+        _audioSource.Play();
+    }
+    public void SoundCallEnd()
+    {
+        _audioSource.clip = clipCallEnd;
+        _audioSource.Play();
     }
 }

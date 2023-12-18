@@ -16,11 +16,13 @@ public class CrontrollerChat : MonoBehaviour
     [SerializeField] private ContactData _contactData;
     [SerializeField] private ControllerPrefabMessage message;
     [SerializeField] private Image imagesForInstantiate;
+    [SerializeField] private bool npcCanAnswer;
+    [SerializeField] private int imageSenInMessageNumber;
+    [SerializeField] private ControllerPhone _controllerPhone;
     public List<string> longAnswers=new List<string>(); 
     public List<string>  shortAnswers=new List<string>();
     public TMP_Text npcAnimationWriting;
     public GameObject npcWaitAnimation;
-
     public bool npcWritting;
     public int countMessage;
     [Header("Config time Chat")]
@@ -33,8 +35,12 @@ public class CrontrollerChat : MonoBehaviour
     [Header("Config Color")]
     public Color32 colorMessageNpc;
     public Color32 colorMessagePlayer;
+    
+    
     public void SetChat(ContactData contactData)
     {
+        imageSenInMessageNumber = Random.Range(0, 5);
+        npcCanAnswer = true;
         countMessage = 0;
         _contactData = contactData;
         imagesContact.sprite = _contactData.spriteContact;
@@ -69,6 +75,7 @@ public class CrontrollerChat : MonoBehaviour
 
     public void SendMessage()
     {
+        _controllerPhone.SoundClickButton();
         message = Instantiate(prefabMessagePlayer, contentMessage, false).GetComponent<ControllerPrefabMessage>();
         message.SetMessage(colorMessagePlayer,inputMessage.text);
         inputMessage.text = "";
@@ -78,13 +85,15 @@ public class CrontrollerChat : MonoBehaviour
 
     void WaitingAnswer()
     {
-        if (npcWritting==true)
+        if (npcCanAnswer)
         {
-            return;
+            if (npcWritting==true)
+            {
+                return;
+            }
+            npcWritting = true;
+            StartCoroutine(WaitNpcWrittin());
         }
-        npcWritting = true;
-        StartCoroutine(WaitNpcWrittin());
-        
     }
     IEnumerator WaitNpcWrittin()
     {
@@ -104,67 +113,77 @@ public class CrontrollerChat : MonoBehaviour
         setMessageNPC();
     }
    //IEnumerator RutineName
-    public void setMessageNPC()
-    {
+   public void setMessageNPC()
+   {
 
-        if (longAnswers.Count > 0||shortAnswers.Count > 0)
-        {
-            int split = message.Messages.text.Length;
-            if (split >= 6)
-            {
-                if (longAnswers.Count > 4)
-                {
-                    int ramdon = Random.Range(0, longAnswers.Count);
-                    message = Instantiate(prefabMessageNPC, contentMessage, false).GetComponent<ControllerPrefabMessage>();
-                    message.SetMessage(colorMessageNpc, longAnswers[ramdon]);
-                    longAnswers.Remove(longAnswers[ramdon]);
-                }
-                else
-                {
-                   Image imagescare= Instantiate(imagesForInstantiate, contentMessage, false);
+       if (longAnswers.Count > 0 || shortAnswers.Count > 0)
+       {
+           int split = message.Messages.text.Length;
+           if (split >= 6)
+           {
+               if (longAnswers.Count > imageSenInMessageNumber)
+               {
+                   int ramdon = Random.Range(0, longAnswers.Count);
+                   message = Instantiate(prefabMessageNPC, contentMessage, false)
+                       .GetComponent<ControllerPrefabMessage>();
+                   message.SetMessage(colorMessageNpc, longAnswers[ramdon]);
+                   longAnswers.Remove(longAnswers[ramdon]);
+               }
+               else
+               {
+                   Image imagescare = Instantiate(imagesForInstantiate, contentMessage, false);
                    imagescare.sprite = _contactData.spriteScare[Random.Range(0, _contactData.spriteScare.Count)];
-                }
-            }
-            if (split < 6)
-            {
-                if (shortAnswers.Count > 4)
-                {
-                    int ramdon = Random.Range(0, shortAnswers.Count);
-                    message = Instantiate(prefabMessageNPC, contentMessage, false).GetComponent<ControllerPrefabMessage>();
-                    message.SetMessage(Color.black, shortAnswers[ramdon]);
-                    shortAnswers.Remove(shortAnswers[ramdon]);
-                }
-                else
-                {
-                    Image imagescare= Instantiate(imagesForInstantiate, contentMessage, false);
-                    imagescare.sprite = _contactData.spriteScare[Random.Range(0, _contactData.spriteScare.Count)];
-                }
-            }
+                   npcCanAnswer = false;
+               }
+           }
 
-            if (countMessage>6)
-            {
-                int inten = Random.Range(0, 2);
-                if(inten==1)
-                {
-                    Image imagescare= Instantiate(imagesForInstantiate, contentMessage, false);
-                    imagescare.sprite = _contactData.spriteScare[Random.Range(0, _contactData.spriteScare.Count)];
-                }
-            }
-        }
-        else
-        {
-            npcWritting = true;
-            Image imagescare= Instantiate(imagesForInstantiate, contentMessage, false);
-            imagescare.sprite = _contactData.spriteScare[Random.Range(0, _contactData.spriteScare.Count)];
-        }
-        npcWritting = false;
-        countMessage++;
-        
-    }
+           if (split < 6)
+           {
+               if (shortAnswers.Count > imageSenInMessageNumber)
+               {
+                   int ramdon = Random.Range(0, shortAnswers.Count);
+                   message = Instantiate(prefabMessageNPC, contentMessage, false)
+                       .GetComponent<ControllerPrefabMessage>();
+                   message.SetMessage(colorMessageNpc, shortAnswers[ramdon]);
+                   shortAnswers.Remove(shortAnswers[ramdon]);
+               }
+               else
+               {
+                   Image imagescare = Instantiate(imagesForInstantiate, contentMessage, false);
+                   imagescare.sprite = _contactData.spriteScare[Random.Range(0, _contactData.spriteScare.Count)];
+                   npcCanAnswer = false;
+               }
+           }
 
-    
-    public void CloseChat()
+           if (countMessage > 6)
+           {
+               int inten = Random.Range(0, 2);
+               if (inten == 1)
+               {
+                   Image imagescare = Instantiate(imagesForInstantiate, contentMessage, false);
+                   imagescare.sprite = _contactData.spriteScare[Random.Range(0, _contactData.spriteScare.Count)];
+                   npcCanAnswer = false;
+               }
+           }
+       }
+       else
+       {
+           npcWritting = true;
+           Image imagescare = Instantiate(imagesForInstantiate, contentMessage, false);
+           imagescare.sprite = _contactData.spriteScare[Random.Range(0, _contactData.spriteScare.Count)];
+           npcCanAnswer = false;
+       }
+
+       npcWritting = false;
+       countMessage++;
+
+
+   }
+
+
+   public void CloseChat()
     {
+        StopAllCoroutines();
         _contactData = null;
         longAnswers.Clear();
         shortAnswers.Clear();
