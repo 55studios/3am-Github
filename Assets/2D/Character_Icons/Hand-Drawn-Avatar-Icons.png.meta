@@ -126,12 +126,12 @@ TextureImporter:
       name: Hand-Drawn-Avatar-Icons_0
       rect:
         serializedVersion: 2
-        x: 16
-        y: 281
-        width: 136
-        height: 137
+        x: 0
+        y: 780
+        width: 152
+        height: 152
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -147,12 +147,12 @@ TextureImporter:
       name: Hand-Drawn-Avatar-Icons_1
       rect:
         serializedVersion: 2
-        x: 196
-        y: 263
-        width: 152
-        height: 151
+        x: 205
+        y: 765
+        width: 140
+        height: 148
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -168,12 +168,12 @@ TextureImporter:
       name: Hand-Drawn-Avatar-Icons_2
       rect:
         serializedVersion: 2
-        x: 384
-        y: 257
-        width: 149
+        x: 390
+        y: 756
+        width: 134
         height: 159
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -189,12 +189,12 @@ TextureImporter:
       name: Hand-Drawn-Avatar-Icons_3
       rect:
         serializedVersion: 2
-        x: 582
-        y: 264
-        width: 145
+        x: 587
+        y: 763
+        width: 134
         height: 151
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -211,11 +211,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 772
-        y: 263
+        y: 770
         width: 134
-        height: 146
+        height: 138
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -232,11 +232,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 951
-        y: 266
+        y: 765
         width: 147
         height: 146
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -253,11 +253,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1139
-        y: 264
+        y: 763
         width: 148
         height: 148
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -274,11 +274,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1323
-        y: 261
+        y: 760
         width: 151
         height: 143
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -294,12 +294,12 @@ TextureImporter:
       name: Hand-Drawn-Avatar-Icons_8
       rect:
         serializedVersion: 2
-        x: 18
-        y: 73
-        width: 148
+        x: 27
+        y: 572
+        width: 134
         height: 157
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -316,11 +316,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 203
-        y: 79
+        y: 584
         width: 164
-        height: 158
+        height: 148
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -337,11 +337,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 391
-        y: 71
-        width: 147
+        y: 570
+        width: 142
         height: 162
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -357,12 +357,12 @@ TextureImporter:
       name: Hand-Drawn-Avatar-Icons_11
       rect:
         serializedVersion: 2
-        x: 573
-        y: 79
-        width: 152
-        height: 148
+        x: 579
+        y: 587
+        width: 142
+        height: 133
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -379,11 +379,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 772
-        y: 82
+        y: 581
         width: 150
-        height: 151
+        height: 139
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -391,48 +391,6 @@ TextureImporter:
       bones: []
       spriteID: b046ad8b4304b954e8be4273c7bc04c5
       internalID: -540283967
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Hand-Drawn-Avatar-Icons_13
-      rect:
-        serializedVersion: 2
-        x: 851
-        y: 74
-        width: 7
-        height: 7
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8e2a41e4ea974fe488699e867eba40ed
-      internalID: 882354825
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Hand-Drawn-Avatar-Icons_14
-      rect:
-        serializedVersion: 2
-        x: 903
-        y: 44
-        width: 8
-        height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 22a88d5cf0dca89448396c7e5da1e457
-      internalID: 1936874724
       vertices: []
       indices: 
       edges: []
@@ -455,6 +413,7 @@ TextureImporter:
       Hand-Drawn-Avatar-Icons_12: -540283967
       Hand-Drawn-Avatar-Icons_13: 882354825
       Hand-Drawn-Avatar-Icons_14: 1936874724
+      Hand-Drawn-Avatar-Icons_15: 2054410646
       Hand-Drawn-Avatar-Icons_2: 931116654
       Hand-Drawn-Avatar-Icons_3: -1565965103
       Hand-Drawn-Avatar-Icons_4: -291606426

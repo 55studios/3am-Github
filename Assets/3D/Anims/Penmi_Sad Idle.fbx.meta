@@ -3,7 +3,17 @@ guid: ab7beba846719c741a8acbc73fd239a9
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: no me llames
+    second: {fileID: 2100000, guid: 3e04e44fa9312ec4cb830a348d0b15e3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ojos
+    second: {fileID: 2100000, guid: a7a7b6f87828da544b2534ba5f3c0042, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
