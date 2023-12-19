@@ -65,10 +65,9 @@ public class ControllerPhone : MonoBehaviour
     public IEnumerator LoadScene(ContactData contactData,UnityEvent callback=null)
     {
         int callEndTime = Random.Range(0, 10);
-        if (callEndTime==3)
+        if (callEndTime==1)
         {
-            
-            CallEnd();
+            StartCoroutine(WaitCallEnd());
         }
         else
         {
@@ -87,21 +86,38 @@ public class ControllerPhone : MonoBehaviour
 
     }
 
+    IEnumerator WaitCallEnd()
+    {
+        yield return new WaitForSeconds(2);
+        CallEnd();
+    }
     public void CallEnd()
     {
         SoundCallEnd();
-        string message = FindObjectOfType<ControlladorScare>().CanEndTheCall();
-        if (message=="true")
+        ControlladorScare controlladorScare=FindObjectOfType<ControlladorScare>();
+        if (controlladorScare!=null)
+        {
+            string message = controlladorScare.CanEndTheCall();
+            if (message=="true")
+            {
+                eventsSound.Invoke();
+                call.activateButton(false);
+                call.ChangeVist();
+                SoundCallEnd();
+                StartCoroutine(DeleteScenAdditive());
+            }
+            else
+            {
+                call.NotificationNotEndCall(message);
+            }
+        }
+
+        else
         {
             eventsSound.Invoke();
             call.activateButton(false);
             call.ChangeVist();
             SoundCallEnd();
-            StartCoroutine(DeleteScenAdditive());
-        }
-        else
-        {
-            call.NotificationNotEndCall(message);
         }
     }
     public IEnumerator DeleteScenAdditive()

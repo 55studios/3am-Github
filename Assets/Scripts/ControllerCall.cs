@@ -106,6 +106,7 @@ public class ControllerCall : MonoBehaviour
         if (captures<capturesTotal)
         {
             captures++;
+            FindObjectOfType<ControlladorScare>().CapturePhoto();
             textTotalCapture.text = captures + "/" + capturesTotal;
         }
     }

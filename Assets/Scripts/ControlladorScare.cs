@@ -108,4 +108,9 @@ public class ControlladorScare : MonoBehaviour
             return listMessageNoEndCall[message];
         }
     }
+
+    public void CapturePhoto()
+    {
+        camActive.GetComponent<ControllerCamera>().PhotoCapture();
+    }
 }
