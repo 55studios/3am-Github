@@ -78,11 +78,11 @@ MonoBehaviour:
     - One of my favorites is sweet avocado
     - I've started yelling...  it's been a lot of... fun :D
     - Yeah, I saw her crying
-    - I don't trust them... none
+    - I don't trust them... none of them
     - It's been pretty good here
     - Definitely want to get... you... in here...
     shortAnswers:
-    - I could b wrong
+    - I could be wrong
     - It's a bit unclear
     - I'd choose him
     - I have some doubts
@@ -90,7 +90,7 @@ MonoBehaviour:
     - No
     - You can't
     - Come... here
-    - Not to b honest
+    - No, to be honest
     - ':D '
     spriteScare:
     - {fileID: 21300000, guid: 6e031e08ca935ae46a730c4d8b645ae4, type: 3}

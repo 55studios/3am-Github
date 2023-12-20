@@ -274,7 +274,7 @@ MonoBehaviour:
   _audioClip: {fileID: 8300000, guid: fbc606dc98155fd42912b5f8330c7cd5, type: 3}
   _camera: {fileID: 148310732}
   flash: {fileID: 391154217476766689}
-  timeActivateFlash: 0.5
+  timeActivateFlash: 0.05
 --- !u!82 &148310736
 AudioSource:
   m_ObjectHideFlags: 0
@@ -814,7 +814,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 100
+  m_Intensity: 70
   m_Range: 24
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -1005,7 +1005,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 100
+  m_Intensity: 70
   m_Range: 24
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -2974,7 +2974,7 @@ MonoBehaviour:
   _audioClip: {fileID: 8300000, guid: ed748fbaa2bdab9468526e460148488d, type: 3}
   _camera: {fileID: 1081897968}
   flash: {fileID: 1641961220}
-  timeActivateFlash: 0.5
+  timeActivateFlash: 0.05
 --- !u!82 &1081897972
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3196,7 +3196,7 @@ MonoBehaviour:
   _audioClip: {fileID: 8300000, guid: 2253288567763c14db83a2bb227fb342, type: 3}
   _camera: {fileID: 1133627965}
   flash: {fileID: 711157949}
-  timeActivateFlash: 0.5
+  timeActivateFlash: 0.05
 --- !u!82 &1133627969
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3418,7 +3418,7 @@ MonoBehaviour:
   _audioClip: {fileID: 8300000, guid: 550f2e99754c25c42a7f6e47e7aaa347, type: 3}
   _camera: {fileID: 1230904722}
   flash: {fileID: 1329267909}
-  timeActivateFlash: 0.3
+  timeActivateFlash: 0.05
 --- !u!82 &1230904726
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4014,7 +4014,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 100
+  m_Intensity: 70
   m_Range: 24
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -4241,7 +4241,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 100
+  m_Intensity: 70
   m_Range: 24
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -4927,7 +4927,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 100
+  m_Intensity: 70
   m_Range: 24
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -5319,7 +5319,7 @@ MonoBehaviour:
   _audioClip: {fileID: 8300000, guid: acd0783b3c4dcfd46838a1a94a466ed1, type: 3}
   _camera: {fileID: 1860961016}
   flash: {fileID: 1692017481}
-  timeActivateFlash: 0.5
+  timeActivateFlash: 0.05
 --- !u!82 &1860961020
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5541,7 +5541,7 @@ MonoBehaviour:
   _audioClip: {fileID: 8300000, guid: ed748fbaa2bdab9468526e460148488d, type: 3}
   _camera: {fileID: 1881630040}
   flash: {fileID: 728538819}
-  timeActivateFlash: 0.5
+  timeActivateFlash: 0.05
 --- !u!82 &1881630044
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6075,7 +6075,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1743224378804377435, guid: 058624e5e1d78c743824641ca49779d9, type: 3}
       propertyPath: m_Intensity
-      value: 100
+      value: 70
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
