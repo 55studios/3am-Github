@@ -781,14 +781,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84b4fd24455642f48b41187e4159a89b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shakeForcePositionX: 0.1
+  shakeForcePositionX: 0.2
   shakeForcePositionY: 0.1
   shakeForcePositionZ: 0.1
   shakeForcePositionRotationX: 0.1
-  shakeForcePositionRotationY: 0.1
+  shakeForcePositionRotationY: 0.25
   shakeForcePositionRotationZ: 0.1
   timeShakePost: 500
-  timeShakeRot: 0.15
+  timeShakeRot: 500
 --- !u!114 &148310735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -804,10 +804,10 @@ MonoBehaviour:
   animator: {fileID: 247962642}
   _audioSource: {fileID: 148310736}
   _audioSourcePhoto: {fileID: 514495757}
-  _audioClip: {fileID: 8300000, guid: fbc606dc98155fd42912b5f8330c7cd5, type: 3}
+  _audioClip: {fileID: 8300000, guid: 8124880283ea7a643a42db2c980acddc, type: 3}
   _camera: {fileID: 148310732}
   flash: {fileID: 514495754}
-  timeActivateFlash: 0.15
+  timeActivateFlash: 0.05
 --- !u!82 &148310736
 AudioSource:
   m_ObjectHideFlags: 0
@@ -965,7 +965,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 100
+  m_Intensity: 70
   m_Range: 24
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -1337,7 +1337,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 100
+  m_Intensity: 70
   m_Range: 24
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -1528,7 +1528,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 100
+  m_Intensity: 70
   m_Range: 24
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -4503,7 +4503,7 @@ MonoBehaviour:
   timeWait: 6
   listMessageNoEndCall:
   - You should stay...
-  - Oh, please, We're just beginning
+  - Oh, please, we're just getting started
   - No...
   _animator: {fileID: 1722120852}
   timeWaitInitChangeCamera: 7
@@ -4725,7 +4725,7 @@ MonoBehaviour:
   shakeForcePositionRotationY: 0.05
   shakeForcePositionRotationZ: 0.09
   timeShakePost: 40000
-  timeShakeRot: 0.15
+  timeShakeRot: 800000
 --- !u!114 &1081897971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4741,10 +4741,10 @@ MonoBehaviour:
   animator: {fileID: 955211314}
   _audioSource: {fileID: 1081897972}
   _audioSourcePhoto: {fileID: 1626187015}
-  _audioClip: {fileID: 8300000, guid: ed748fbaa2bdab9468526e460148488d, type: 3}
+  _audioClip: {fileID: 8300000, guid: 115304b6398aeaa44851d52d304a3ab6, type: 3}
   _camera: {fileID: 1081897968}
   flash: {fileID: 1626187012}
-  timeActivateFlash: 0.15
+  timeActivateFlash: 0.05
 --- !u!82 &1081897972
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4947,7 +4947,7 @@ MonoBehaviour:
   shakeForcePositionRotationY: 0.05
   shakeForcePositionRotationZ: 0.09
   timeShakePost: 40000
-  timeShakeRot: 0.15
+  timeShakeRot: 800000
 --- !u!114 &1133627968
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4963,10 +4963,10 @@ MonoBehaviour:
   animator: {fileID: 1814983067}
   _audioSource: {fileID: 1133627969}
   _audioSourcePhoto: {fileID: 2052705240}
-  _audioClip: {fileID: 8300000, guid: acd0783b3c4dcfd46838a1a94a466ed1, type: 3}
+  _audioClip: {fileID: 8300000, guid: 93cad7237950c364c9f0b19eaf2668c7, type: 3}
   _camera: {fileID: 1133627965}
   flash: {fileID: 2052705237}
-  timeActivateFlash: 0.15
+  timeActivateFlash: 0.05
 --- !u!82 &1133627969
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5169,7 +5169,7 @@ MonoBehaviour:
   shakeForcePositionRotationY: 0.05
   shakeForcePositionRotationZ: 0.09
   timeShakePost: 40000
-  timeShakeRot: 0.15
+  timeShakeRot: 800000
 --- !u!114 &1230904725
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5185,10 +5185,10 @@ MonoBehaviour:
   animator: {fileID: 551278224}
   _audioSource: {fileID: 1230904726}
   _audioSourcePhoto: {fileID: 345346620}
-  _audioClip: {fileID: 8300000, guid: 100fc699cb24308428ff8cf69eda71af, type: 3}
+  _audioClip: {fileID: 8300000, guid: 0a8f8a342bb95a642bb155e80130c276, type: 3}
   _camera: {fileID: 1230904722}
   flash: {fileID: 345346617}
-  timeActivateFlash: 0.15
+  timeActivateFlash: 0.05
 --- !u!82 &1230904726
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5383,7 +5383,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 100
+  m_Intensity: 70
   m_Range: 24
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -5668,7 +5668,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 100
+  m_Intensity: 70
   m_Range: 24
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -6072,7 +6072,7 @@ MonoBehaviour:
   shakeForcePositionRotationY: 0.05
   shakeForcePositionRotationZ: 0.09
   timeShakePost: 40000
-  timeShakeRot: 0.15
+  timeShakeRot: 800000
 --- !u!114 &1860961019
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6088,10 +6088,10 @@ MonoBehaviour:
   animator: {fileID: 1012091322}
   _audioSource: {fileID: 1860961020}
   _audioSourcePhoto: {fileID: 414105994}
-  _audioClip: {fileID: 8300000, guid: d23479fd6250e2e4cad07556d88d6976, type: 3}
+  _audioClip: {fileID: 8300000, guid: 4d95889cac83bc34aba9759f20940d00, type: 3}
   _camera: {fileID: 1860961016}
   flash: {fileID: 414105991}
-  timeActivateFlash: 0.15
+  timeActivateFlash: 0.05
 --- !u!82 &1860961020
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6294,7 +6294,7 @@ MonoBehaviour:
   shakeForcePositionRotationY: 0.05
   shakeForcePositionRotationZ: 0.09
   timeShakePost: 40000
-  timeShakeRot: 0.15
+  timeShakeRot: 800000
 --- !u!114 &1881630043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6310,10 +6310,10 @@ MonoBehaviour:
   animator: {fileID: 1009223859}
   _audioSource: {fileID: 1881630044}
   _audioSourcePhoto: {fileID: 1311069781}
-  _audioClip: {fileID: 8300000, guid: acd0783b3c4dcfd46838a1a94a466ed1, type: 3}
+  _audioClip: {fileID: 8300000, guid: 5b9b74355f2a6d24e9c809e296fdba92, type: 3}
   _camera: {fileID: 1881630040}
   flash: {fileID: 1311069778}
-  timeActivateFlash: 0.15
+  timeActivateFlash: 0.05
 --- !u!82 &1881630044
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7120,7 +7120,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!108 &2052705238
 Light:
   m_ObjectHideFlags: 0
@@ -7133,7 +7133,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 100
+  m_Intensity: 70
   m_Range: 24
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
